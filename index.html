@@ -1,0 +1,217 @@
+---
+layout: bootcamp
+root: .
+venue: NESCent
+address: 2024 W. Main Street, Suite A200, Durham, NC
+country: United-States
+humandate: May 8-9, 2014
+humantime: 9:00 am - 5 pm
+startdate: 2014-05-08
+enddate: 2014-05-09
+latlng: 36.0080203,-78.9232326
+registration: open
+instructor: ["Karen Cranston (NESCent)", "Hilmar Lapp (NESCent)", "Tracy Teal (BEACON)", "Ethan White (Utah State U.)"]
+assistant: ["Darren Boss (iPlant)", "Matt Collins (iDigBio)", "Deb Paul (iDigBio)", "Mike Smorul (SESYNC)"] 
+contact: datacarpentry@nescent.org
+raw: raw.github.com/nescent/2014-05-08-datacarpentry/gh-pages
+eventbrite: 11257077221
+---
+<!--
+    Edit the values in the parameter block above to be appropriate for your bootcamp.
+    Please use three-letter month names for the 'humandate' field.
+-->
+
+<!--
+    This block includes the Eventbrite registration widget if 'eventbrite' has been set in the header.
+-->
+
+
+<h2>General Information</h2>
+
+<p>
+Data Carpentry's aim is to teach researchers basic concepts, skills,
+and tools for working with data so that they can get more done in less
+time, and with less pain.
+</p>
+<p>
+Our curriculum includes:
+<ul>
+<li>  Day 1 morning: Getting data out of Excel and into more powerful tools
+<li>  Day 1 afternoon: Managing data in R.
+<li>  Day 2 morning: Introduction to databases, combining and querying data using SQL.
+<li>  Day 2 afternoon: Collaborative data management & publishing data.
+</ul>
+The concepts, skills, and tools we teach are domain-independent, but example problem cases and datasets will be taken from organismal and evolutionary biology, biodiversity science, ecology, and environmental science. 
+</p>
+
+<p>
+Data Carpentry's teaching is hands-on, so participants are required to bring their own laptops.  (We will provide instructions on setting up the required software several days in advance, and NESCent does have a few loaner laptops if you can't bring one.) <em>There are no pre-requisites, and we will assume no prior knowledge about the tools.</em>
+</p>
+
+<p>Updates will be posted to this website as they become available.</p>
+
+<!-- This block displays the instructors' names if they are available. -->
+{% if page.instructor %}
+<p>
+  <strong>Instructors:</strong>
+  {{page.instructor | join: ', ' %}}
+</p>
+<p>
+  <strong>Assistants:</strong>
+  {{page.assistant | join: ', ' %}}
+
+{% endif %}
+
+<!--
+    Modify this block to reflect the target audience for your bootcamp.
+    In particular, if it is only open to people from a particular institution,
+    or if specialized prerequisite knowledge is required, please mention that.
+-->
+<p>
+  <strong>Who:</strong>
+  The course is aimed at graduate students, postdocs, research staff, and other researchers. 
+</p>
+
+<!--
+    This block displays the address and links to a map showing directions.
+-->
+{% if page.latlng %}
+<p>
+  <strong>Where:</strong>
+  {{ page.address }}.
+  NESCent has <a href="http://www.nescent.org/about/directions.php" target="_blank">directions on its website</a>; or get directions with
+  <a href="http://www.openstreetmap.org/?mlat={{ page.latlng | replace:',','&mlon=' }}&zoom=16">OpenStreetMap</a>
+  or
+  <a href="http://maps.google.com/maps?q={{ page.latlng }}">Google Maps</a>.
+</p>
+{% endif %}
+
+<!--
+    Modify the block below if there are any special requirements.
+-->
+<p>
+  <strong>Requirements:</strong>
+  Participants must bring a laptop with a few specific software packages installed. If you will be traveling from out of town, you will need to make your own travel arrangements; note also that the course dates are right before the start of Duke graduation weekend, and therefore <strong>please secure needed accomodations before registering!</strong>
+</p>
+
+<!--
+    This block automatically inserts a contact email address if one has been specified for the page.
+    If one hasn't, this block inserts the generic contact address for Software Carpentry.
+-->
+<p>
+  <strong>Contact</strong>:
+  Please email
+  {% if page.contact %}
+    <a href='mailto:{{page.contact}}'>{{page.contact}}</a>
+  {% else %}
+    <a href='mailto:{{site.contact}}'>{{site.contact}}</a>
+  {% endif %}
+  for questions and information not covered here.
+</p>
+
+<p><strong>Twitter</strong>: #datacarpentry</p>
+<p><strong>Etherpad</strong>: <a href="https://etherpad.mozilla.org/nescent-2014-05">https://etherpad.mozilla.org/nescent-2014-05</a></p>
+
+<h2>Acknowledgements &amp; Support</h2>
+<div class="pull-right" style="max-width: 320px; padding-left: 6px;">
+  <a href="http://dataone.org" title="DataONE">
+    <img alt="DataONE Logo" src="{{page.root}}/img/DataONE_LOGO.jpg" width="auto"/>
+  </a>
+</div>
+<p>
+Data Carpentry is a partnership of several NSF-funded <a href="http://www.nsf.gov/dir/index.jsp?org=BIO" target="_blank">BIO</a> Centers (<a href="http://nescent.org" target="_blank">NESCent</a>, <a href="http://iplantcollaborative.org" target="_blank">iPlant</a>, <a href="http://idigbio.org" target="_blank">iDigBio</a>, <a href="http://beacon-center.org/" target="_blank">BEACON</a> and <a href="http://sesync.org" target="_blank">SESYNC</a>) and <a href="http://software-carpentry.org" target="_blank">Software Carpentry</a>, and is sponsored by the <a href="http://dataone.org" target="_blank">Data Observation Network for Earth</a> (DataONE). The structure and objectives of the curriculum as well as the teaching style are informed by <a href="http://software-carpentry.org" target="_blank">Software Carpentry</a>.
+</p>
+
+{% if page.eventbrite %}
+<h2>Registration</h2>
+<p>
+Tuition for the course is free, but prior registration is required for attending it. Registration is through EventBrite, see below.</p> 
+<iframe src="http://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt" frameborder="0" width="100%" height="210" scrolling="auto"></iframe>
+{% endif %}
+
+
+<!--
+    Edit this block to show the syllabus and schedule for your bootcamp.
+-->
+
+<h2>Schedule</h2>
+
+<table class="table table-striped">
+  <tr> <td>Thursday</td>  <td>09:00</td>  <td>Thinking beyond Excel; data wrangling in the shell</td> </tr>
+  <tr> <td></td>        <td></td>       <td>Coffee will be served at 10:30.</td> </tr>
+  <tr> <td></td>        <td>12:00</td>  <td>Lunch break</td> </tr>
+  <tr> <td></td>        <td>13:00</td>  <td>Data analysis in R</td> </tr>
+  <tr> <td></td>        <td></td>       <td>Coffee will be served at 14:30.</td> </tr>
+  <tr> <td></td>        <td>16:00</td>  <td>Wrap-up</td> </tr>
+  <tr> <td>Friday</td> <td>09:00</td>  <td>Managing data with SQL</td> </tr>
+  <tr> <td></td>        <td></td>       <td>Coffee will be served at 10:30.</td> </tr>
+  <tr> <td></td>        <td>12:00</td>  <td>Lunch break</td> </tr>
+  <tr> <td></td>        <td>13:00</td>  <td>Automating data workflows</td> </tr>
+  <tr> <td></td>        <td></td>       <td>Coffee will be served at 14:30.</td> </tr>
+  <tr> <td></td>        <td>16:00</td>  <td>Wrap-up</td> </tr>
+</table>
+
+<hr/>
+
+<!--
+    Edit the setup instructions in _includes/setup.html to reflect your bootcamp.
+    (In particular, most bootcamps teach either Python or R, not both.)
+-->
+
+
+
+<h2>Additional Resources</h2>
+
+<h3>shell</h3>
+<ul>
+<li><a href=http://fosswire.com/post/2007/08/unixlinux-command-cheat-sheet/>Unix/Linux Command Reference</a>
+<li><a href=https://github.com/swcarpentry/boot-camps/blob/master/shell/shell_cheatsheet.md
+>Shell cheat sheet</a>
+<li><a href=http://software-carpentry.org/v4/shell/index.html>Software Carpentry shell lessons</a>
+</ul>
+
+<h3>R</h3>
+
+<b>Where to learn more about R</b>
+<ul>
+<li><a href=http://www.statmethods.net/>http://www.statmethods.net/</a> - good for data organization, basics stats and graphs
+<li><a href=http://www.gardenersown.co.uk/Education/Lectures/R/anova.htm>http://www.gardenersown.co.uk/Education/Lectures/R/anova.htm</a> - basic parametric and non-parametric stats
+<li><a href=http://www.cyclismo.org/tutorial/R/index.html>http://www.cyclismo.org/tutorial/R/index.html</a> - R tutorial
+<li><a href=http://www.amazon.com/R-Action-Robert-Kabacoff/dp/1935182390>R in Action</a> - good book as an R reference
+<li><a href=http://www.twotorials.com/>http://www.twotorials.com/</a>
+<li><a href=http://www.r-bloggers.com/>http://www.r-bloggers.com/</a>
+<li><a href=http://tryr.codeschool.com/>http://tryr.codeschool.com/</a>
+<li><a href=http://adv-r.had.co.nz/>Advanced R Programming by Hadley Wickham</a>
+<li><a href=http://www.computerworld.com/s/article/9239625/Beginner_s_guide_to_R_Introduction>Beginner's Guide to R from Computer World</a>
+<li><a href=http://www.scoop.it/t/r-for-journalists>R for Journalists</a>
+<li><a href=http://www.r-bloggers.com/>R Bloggers</a>
+<li><a href=http://www.inside-r.org/>inside-R</a> 
+<li><a href=http://ropensci.org/>rOpenSci</a>
+</ul>
+
+<p>
+<b>Plotting in R</b>
+<ul>
+<li><a href=http://www.harding.edu/fmccown/r/>http://www.harding.edu/fmccown/r/</a> - Very simple graphs
+<li><a href=https://storify.com/tracykteal/r-galleries>A variety of R gallery recommendations</a>
+<li><a href=http://docs.ggplot2.org/>ggplot gallery</a> - extensive and comprehensive; a great resource
+<li><a href=http://www.amazon.com/R-Graphics-Cookbook-Winston-Chang-ebook/dp/B00AJ5X7W4/>R Graphics Cookbook</a> - highly recommended
+<li><a href=http://www.cookbook-r.com/Graphs/>Some of R Graphics Cookbook plots</a> - a set of some of the plots from the R Graphics Cookbook by Winston Chang
+<li><a href=http://rgm3.lab.nig.ac.jp/RGM/R_image_list?page=665&init=true>R Graphical Manual</a> - plots from apparently every R CRAN package
+</ul>
+
+
+<h2>Setup</h2>
+
+<p>
+  To participate in a Data Carpentry bootcamp, 
+  you will need working copies of the software described below.
+  Please make sure to install everything
+  (or at least to download the installers)
+  <em>before</em> the start of your bootcamp.
+</p>
+
+{% include setup.html %}
+
+
+
