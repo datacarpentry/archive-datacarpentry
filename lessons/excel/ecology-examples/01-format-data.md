@@ -1,5 +1,3 @@
-##Formatting data tables in spreadsheets
-
 # Formatting data tables in Spreadsheets #
 
 The most common mistake a casual spreadsheet user makes is by treating the program like it is a lab notebook- that is, relying on context, notes in the margin, spatial layout of data and fields to convey information. As humans, we can (usually) interpret these things, but computers are dumb, and unless we explain to the computer what every single thing means, it will not be able to see how our data fit together.
@@ -18,14 +16,14 @@ Let's try this with an example using some of our sample data: [a list of species
 
 The output should look like this:
 
-![Tables in Excel - example 1](../../img/excel_tables_example.png)
+![Tables in Excel - example 1](../../../img/excel_tables_example.png)
 
-![Tables in Excel- example 2](../../img/excel_tables_example1.png)
+![Tables in Excel- example 2](../../../img/excel_tables_example1.png)
 
 
 A common grad student error I’ve seen is students that create multiple data tables within one spreadsheet. NEVER DO THIS. When you create multiple tables within one spreadsheet, you’re drawing false associations between things for the computer, which sees each row as an observation. You’re also potentially using the same field name in multiple places, which will make it harder to clean your data up into a usable form. The example below depicts the problem:
 
-![Classis spreadsheet mistake](../../img/many_tables_one_sheet.jpg)
+![Classis spreadsheet mistake](../../../img/many_tables_one_sheet.jpg)
 
 
 But what about worksheet tabs? That seems like an easy way to organize data, right? Well, yes and no. When you create extra tabs, you fail to allow the computer to see connections in the data that are there. Say, for instance, you make a separate tab for each day you take a measurement.

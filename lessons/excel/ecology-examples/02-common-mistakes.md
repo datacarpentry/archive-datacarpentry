@@ -11,7 +11,7 @@ Many statistical programs will not recognize that numeric values of null are ind
 
 From White et al, 2013, Nine simple ways to make it easier to (re)use your data. Ideas in Ecology and Evolution:
 
-![White et al.](https://raw.githubusercontent.com/cbahlai/datacarpentry/master/lessons/excel/images/3_white_table_1.jpg)
+![White et al.](../../../img/bad_null_values_white.jpg)
 ## Using formatting to convey information ##
  Example: highlighting cells, rows or columns that should be excluded from an analysis, leaving blank rows to indicate separations in data
 	solution: create a new field to encode which data should be excluded
