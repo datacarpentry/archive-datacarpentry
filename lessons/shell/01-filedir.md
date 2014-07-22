@@ -195,7 +195,7 @@ Now let's take a look at what's in Vlad's `data` directory by running `ls -F dat
 i.e.,
 the command `ls` with the parameters `-F` and `data`.
 The second parameter&mdash;the one *without* a leading dash&mdash;tells `ls` that
-we want a listing of something other than our current working directory: <!-- using " ../[folder name] " in ls-->
+we want a listing of something other than our current working directory:
 
 ~~~
 $ ls -F data
