@@ -7,7 +7,7 @@ The cardinal rules of using spreadsheet programs for data:
 	1. Put all your variables in columns
 	2. Put each observation in its own row
 	3. Don’t @#$%! with it
-	4. Export to CSV.
+	4. Export to a text based format like CSV.
 
 In reality, though, many scientists use spreadsheet programs for much more than this. We use them to create data tables for publications, to generate summary statistics, and make figures. 
 Generating tables for publications in a spreadsheet is not optimal- often, when formatting a data table for publication, we’re reporting key summary statistics in a way that is not really meant to be read as data, and often involves special formatting (merging cells, creating borders, making it pretty). We advise you to do this sort of operation within your document editing software.
