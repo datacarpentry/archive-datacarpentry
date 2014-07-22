@@ -7,7 +7,7 @@ When you have a well-structured data table, you can use several simple technique
 [Example: converting all data to values: use soybean aphid suction trap dataset for this section]
 
 ## Sorting ##
-Bad values often sort to bottom or top of column. Sort your data by each field, one at a time. Scan through each column, but pay the most attention to the top and the bottom of a column. 
+Bad values often sort to bottom or top of column. For example, if your data should be numeric, then alphabetical and null data will group at the ends of the sorted data. Sort your data by each field, one at a time. Scan through each column, but pay the most attention to the top and the bottom of a column. 
 If your dataset is well-structured and does not contain formulas, sorting should never affect the integrity of your dataset.
 
 [Example: sorting]
