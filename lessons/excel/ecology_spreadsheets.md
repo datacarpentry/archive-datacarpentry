@@ -39,11 +39,19 @@ You must make it clear to the computer how the data cells relate to the relevant
 
 So, you can see how these two points apply directly to how you set up your spreadsheets. 
 
-The rule of thumb, when setting up a datasheet, is columns= fields, rows = observations, cells=data.
+The rule of thumb, when setting up a datasheet, is columns= fields, rows = observations, cells=data (values).
+Let's try this with an example using some of our sample data: [a list of species](../data/biology/species.csv) and [a list of plots](../data/biology/plots.csv). You can do that by simply opening the `*.csv` files in Excel. Excel will automatically try to fit the data from the `*.csv` file and put the first value in column A and the second value in column B. 
 
-[create a basic datasheet in Excel]
+The output should look like this:
 
-A common grad student error I’ve seen is students that create multiple data tables within one spreadsheet. NEVER DO THIS. When you create multiple tables within one spreadsheet, you’re drawing false associations between things for the computer, which sees each row as an observation. You’re also potentially using the same field name in multiple places, which will make it harder to clean your data up into a usable form
+![Tables in Excel - example 1](img/excel_tables_example.png)
+
+![Tables in Excel- example 2](img/excel_tables_example1.png)
+
+
+A common grad student error I’ve seen is students that create multiple data tables within one spreadsheet. NEVER DO THIS. When you create multiple tables within one spreadsheet, you’re drawing false associations between things for the computer, which sees each row as an observation. You’re also potentially using the same field name in multiple places, which will make it harder to clean your data up into a usable form.
+
+
 
 
 
