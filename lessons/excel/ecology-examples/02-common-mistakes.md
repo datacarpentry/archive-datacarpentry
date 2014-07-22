@@ -43,3 +43,6 @@ Solution: Never, ever, EVER include more than one piece of information in a cell
 Choose descriptive field names, but be careful not to include: spaces, numbers, or special characters of any kind. Spaces can be misinterpreted and some programs don’t like field names that are text strings that start with numbers.
 
 [work through good examples of field names]
+
+
+Previous: [Formatting data tables in spreadsheets.](01-format-data.md) Next: [Dates as data.](03-dates-as-data.md)

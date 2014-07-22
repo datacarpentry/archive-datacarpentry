@@ -40,3 +40,5 @@ So, can you convert all your dates into DOY format? Well, in excel, here’s a h
 
 [Exercise: pulling month out of Excel dates]
 
+
+Previous: [Common formatting mistakes by spreadsheet users.](02-common-mistakes.md) Next: [Basic quality control and data manipulation in spreadsheets.](04-quality-control.md)

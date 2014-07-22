@@ -39,3 +39,6 @@ The next time you’re entering data, and you go to create another tab or table,
 Your data sheet might get very long over the course of experiment. This makes it harder to enter data if you can’t see your headers at the top of the spreadsheet. But do NOT repeat headers. These can easily get mixed into the data, leading to problems down the road.
 
 [Show an example of how to freeze panes in Excel]
+
+
+Previous: [Introduction](00-intro.md)  Next: [Common formatting mistakes by spreadsheet users.](02-common-mistakes.md)

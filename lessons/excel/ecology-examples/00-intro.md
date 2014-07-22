@@ -18,12 +18,14 @@ HOWEVER, there are circumstances where you might want to use a spreadsheet progr
 
 In this lesson, we will assume that you are most likely using Excel as your primary spreadsheet program- there are others (gnumeric, Calc from OpenOffice), and their functionality is similar, but Excel seems to be the program most used by biologists and ecologists.
 
-![by @tim_yates](../../../img/helpful_clippy.jpg)
+![Helpful clippy - img by @tim_yates](../../../img/helpful_clippy.jpg)
 
 In this lesson, we’re going to talk about:
 
-    Formatting data tables in spreadsheets.
-    Common formatting mistakes by spreadsheet users
-    Dates as data
-    Basic quality control and data manipulation in spreadsheets
-    Exporting data from spreadsheets
+1. [Formatting data tables in spreadsheets.](01-format-data.md)
+2. [Common formatting mistakes by spreadsheet users.](02-common-mistakes.md)
+3. [Dates as data.](03-dates-as-data.md)
+4. [Basic quality control and data manipulation in spreadsheets.](04-quality-control.md)
+5. [Exporting data from spreadsheets.](05-exporting-data.md)
+
+Next: [Formatting data tables in spreadsheets.](01-format-data.md)
