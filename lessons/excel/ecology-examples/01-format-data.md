@@ -23,7 +23,7 @@ The output should look like this:
 
 A common grad student error I’ve seen is students that create multiple data tables within one spreadsheet. NEVER DO THIS. When you create multiple tables within one spreadsheet, you’re drawing false associations between things for the computer, which sees each row as an observation. You’re also potentially using the same field name in multiple places, which will make it harder to clean your data up into a usable form. The example below depicts the problem:
 
-![Classis spreadsheet mistake](../../../img/many_tables_one_sheet.jpg)
+![Classic spreadsheet mistake](../../../img/many_tables_one_sheet.jpg)
 
 
 But what about worksheet tabs? That seems like an easy way to organize data, right? Well, yes and no. When you create extra tabs, you fail to allow the computer to see connections in the data that are there. Say, for instance, you make a separate tab for each day you take a measurement.
