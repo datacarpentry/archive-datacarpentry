@@ -45,4 +45,12 @@ Choose descriptive field names, but be careful not to include: spaces, numbers, 
 [work through good examples of field names]
 
 
+##Special characters in data ##
+
+A common mistake is to treat Excel as a word processor when writing notes.  For example, when writing longer text in a cell, people often include line breaks, em-dashes, et al in their spreadsheet.  Worse yet, when copying data in from applications such as Word, formatting and fancy non-standard characters (such as left- and right-aligned quotation marks) are included.  When exporting this data into a coding/statistical environment or into a relational database, dangerous things may occur, such as lines being cut in half and encoding errors being thrown.
+
+General best practice is to avoid adding characters such as newlines, tabs, and vertical tabs.  In other words, treat a text cell as if it were a simple web form that can only contain text and spaces.
+
+[ include sample of problematic data, and cleaned version ]
+
 Previous: [Formatting data tables in spreadsheets.](01-format-data.md) Next: [Dates as data.](03-dates-as-data.md)
