@@ -455,6 +455,7 @@ and we will see it in many other tools as we go on.
 > `$ man -k ls`
 > ~~~
 > {:class="in"}
+> '-k' stands for shortened documentation.
 
 <div class="keypoints" markdown="1">
 
