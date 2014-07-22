@@ -16,3 +16,6 @@ An important note for backwards compatibility: you can open CSVs in Excel!
 
 A cautionary note on Excel for Mac- apparently, there are some issues that can occur in certain versions when you attempt to save to .csv on a Mac- specifically, the line endings generate problems for several statistical problems and coding environments. The GUI-based workaround is to save the file as a “Windows comma separated (.csv)” file. A code-based work-around can be found here:
 http://nicercode.github.io/blog/2013-04-30-excel-and-line-endings/
+
+
+Previous: [Basic quality control and data manipulation in spreadsheets.](04-quality-control.md) 

@@ -27,3 +27,5 @@ In this lesson, we’re going to talk about:
 3. [Dates as data.](03-dates-as-data.md)
 4. [Basic quality control and data manipulation in spreadsheets.](04-quality-control.md)
 5. [Exporting data from spreadsheets.](05-exporting-data.md)
+
+Next: [Formatting data tables in spreadsheets.](01-format-data.md)
