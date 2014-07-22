@@ -4,7 +4,7 @@ Spreadsheet programs are use very useful graphical interfaces for designing data
 
 The cardinal rules of using spreadsheet programs for data:
 
-	1. Put all your fields in columns
+	1. Put all your variables in columns
 	2. Put each observation in its own row
 	3. Don’t @#$%! with it
 	4. Export to CSV.
@@ -12,11 +12,13 @@ The cardinal rules of using spreadsheet programs for data:
 In reality, though, many scientists use spreadsheet programs for much more than this. We use them to create data tables for publications, to generate summary statistics, and make figures. 
 Generating tables for publications in a spreadsheet is not optimal- often, when formatting a data table for publication, we’re reporting key summary statistics in a way that is not really meant to be read as data, and often involves special formatting (merging cells, creating borders, making it pretty). We advise you to do this sort of operation within your document editing software.
 
-The latter two applications,  generating statistics and figures,  should be used with caution: because of the graphical, drag and drop nature of spreadsheet programs, it can be very difficult, if not impossible, to replicate your steps, particularly if your stats or figures require you to do more complex calculations. Furthermore, in doing calculations in a spreadsheet, it’s easy to accidentally apply a slightly different formula to multiple adjacent cells. When using a command-line based statistics program like R or SAS, it’s practically impossible to accidentally apply a calculation to one observation in your dataset but not another unless you’re doing it on purpose. 
+The latter two applications,  generating statistics and figures,  should be used with caution: because of the graphical, drag and drop nature of spreadsheet programs, it can be very difficult, if not impossible, to replicate your steps (much less retrace anyone else's), particularly if your stats or figures require you to do more complex calculations. Furthermore, in doing calculations in a spreadsheet, it’s easy to accidentally apply a slightly different formula to multiple adjacent cells. When using a command-line based statistics program like R or SAS, it’s practically impossible to accidentally apply a calculation to one observation in your dataset but not another unless you’re doing it on purpose. 
 
 HOWEVER, there are circumstances where you might want to use a spreadsheet program to produce “quick and dirty” calculations or figures, and some of these features can be used in data cleaning, prior to importation into a statistical analysis program. We will show you how to use some features of spreadsheet programs to check your data quality along the way and produce preliminary summary statistics.
 
 In this lesson, we will assume that you are most likely using Excel as your primary spreadsheet program- there are others (gnumeric, Calc from OpenOffice), and their functionality is similar, but Excel seems to be the program most used by biologists and ecologists.
+
+![by @tim_yates](https://raw.githubusercontent.com/cbahlai/datacarpentry/master/lessons/excel/images/1_helpful_clippy.jpg)
 
 In this lesson, we’re going to talk about:
 
@@ -51,9 +53,7 @@ The output should look like this:
 
 A common grad student error I’ve seen is students that create multiple data tables within one spreadsheet. NEVER DO THIS. When you create multiple tables within one spreadsheet, you’re drawing false associations between things for the computer, which sees each row as an observation. You’re also potentially using the same field name in multiple places, which will make it harder to clean your data up into a usable form.
 
-
-
-
+![Classis spreadsheet mistake](https://raw.githubusercontent.com/cbahlai/datacarpentry/master/lessons/excel/images/2_datasheet_example.jpg)
 
 [create an example of this in Excel]
 
@@ -81,7 +81,7 @@ Many statistical programs will not recognize that numeric values of null are ind
 
 From White et al, 2013, Nine simple ways to make it easier to (re)use your data. Ideas in Ecology and Evolution:
 
-
+![White et al.](https://raw.githubusercontent.com/cbahlai/datacarpentry/master/lessons/excel/images/3_white_table_1.jpg)
 ## Using formatting to convey information ##
  Example: highlighting cells, rows or columns that should be excluded from an analysis, leaving blank rows to indicate separations in data
 	solution: create a new field to encode which data should be excluded
@@ -93,7 +93,9 @@ Example: merging cells
 If you’re not careful, formatting a worksheet to be more aesthetically pleasing can compromise your computer’s ability  to see associations in the data. Merged cells are an absolute formatting NO-NO if you want to make your data readable by statistics software.  Consider restructuring your data in such a way that you will not need to merge cells to organize your data
 
 [create an example of this in Excel]
-by @naupakaz
+
+![by @naupakaz](https://raw.githubusercontent.com/cbahlai/datacarpentry/master/lessons/excel/images/4_merged_cells.jpg)
+
 
 ## Placing comments or units in cells ##
 Example: your data was collected, in part, by a summer student you later found out was mis-identifying some of your species, some of the time. You want a way to note these data are suspect.
@@ -115,6 +117,7 @@ Choose descriptive field names, but be careful not to include: spaces, numbers, 
 ## Dates as data ##
 Spreadsheet programs have numerous “useful features” which allow them to “handle” dates in a variety of ways.
 
+![Many formats, many ambiguities](https://raw.githubusercontent.com/cbahlai/datacarpentry/master/lessons/excel/images/5_excel_dates_1.jpg)
 
 But these ‘features’ often allow ambiguity to creep into your data. Ideally, data should be as unambiguous as possible. The first thing you need to know is that Excel stores dates as a number- see the last column in the above figure. Essentially, it counts the days from a default of December 31, 1899, and thus stores July 2, 2014 as  the serial number 41822.
 
@@ -134,6 +137,7 @@ Which brings us to the many ‘wonderful’ customizations Excel provides in how
 
 Once, I received a dataset from a colleague representing insect counts that were taken every few days over the summer, and things went something like this:
 
+![So, so ambiguous, it's even confusing Excel](https://raw.githubusercontent.com/cbahlai/datacarpentry/master/lessons/excel/images/6_excel_dates_2.jpg)
 
 
 If Excel was to be believed, my colleague had been collecting bugs IN THE FUTURE. Now, I have no doubt this person is highly capable, but I believe time travel was beyond even his grasp.
@@ -146,6 +150,7 @@ The types of statistical models I build usually incorporate year as a factor, to
 
 So, can you convert all your dates into DOY format? Well, in excel, here’s a handy dandy guide:
 
+![Kill that ambiguity before it bites you!](https://raw.githubusercontent.com/cbahlai/datacarpentry/master/lessons/excel/images/7_excel_dates_3.jpg)
 
 
 
@@ -184,7 +189,7 @@ Pivot tables are a very powerful tool in Excel. They’re useful to check for is
 
 Why would I need to reshape my data? Different analyses require data to be in different formats- example: taking a species list to a diversity analysis.
 
-[Use GLBRC Bees species list example]
+[Use species list example]
 
 Note: these operations can be done in most statistical or programming packages (i.e. using reshape2, plyr  in R)
 
