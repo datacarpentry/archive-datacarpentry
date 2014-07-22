@@ -17,7 +17,7 @@ And it would return
 
 because it understands the date as a number 41822, and 41822 +37 =41859 which Excel interprets as August 8, 2014. It retains the format (for the most part) of the cell that is being operated upon, (unless you did some sort of formatting to the cell before, and then all bets are of)
 
-Which brings us to the many ‘wonderful’ customizations Excel provides in how it displays dates. If you refer to the figure above, you’ll see that there’s many, MANY ways that ambiguity creeps into your data depending on the format you chose when you enter your data, and if you’re not fully cognizant of which format you’re using, you can end up actually entering your data in a way that Excel will heavily misinterpret.
+Which brings us to the many ‘wonderful’ customizations Excel provides in how it displays dates. If you refer to the figure above, you’ll see that there are many, MANY ways that ambiguity creeps into your data depending on the format you chose when you enter your data, and if you’re not fully cognizant of which format you’re using, you can end up actually entering your data in a way that Excel will heavily misinterpret. Worse yet, when exporting into a text-based format (such as CSV), Excel will export its internal date integer instead of a useful value
 
 Once, I received a dataset from a colleague representing insect counts that were taken every few days over the summer, and things went something like this:
 
@@ -40,5 +40,6 @@ So, can you convert all your dates into DOY format? Well, in excel, here’s a h
 
 [Exercise: pulling month out of Excel dates]
 
+Note: Excel is unable to parse dates from before 1899-12-31, and will thus leave these untouched.  If you’re mixing historic data from before and after this date, Excel will translate only the post-1900 dates into its internal format, thus resulting in mixed data.  If you’re working with historic data, be extremely careful with your dates!
 
 Previous: [Common formatting mistakes by spreadsheet users.](02-common-mistakes.md) Next: [Basic quality control and data manipulation in spreadsheets.](04-quality-control.md)
