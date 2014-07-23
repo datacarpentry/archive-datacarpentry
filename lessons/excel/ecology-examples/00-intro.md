@@ -1,7 +1,8 @@
 # Using spreadsheet programs for scientific data #
 
-Author: **Christie Bahlai** 
-<br>Contributors: **Jennifer Bryan**, **Alexander Duryee**, **Jeffrey Hollister**, **Daisie Huang**, **Owen Jones**, **Ben Marwick**, **Aleksandra Pawlik**
+Authors:**Christie Bahlai**, **Aleksandra Pawlik**<br>
+Contributors: **Jennifer Bryan**, **Alexander Duryee**, **Jeffrey Hollister**, **Daisie Huang**, **Owen Jones**, and
+**Ben Marwick**
 
 Spreadsheet programs are use very useful graphical interfaces for designing data tables and handling very basic data quality control functions. 
 
