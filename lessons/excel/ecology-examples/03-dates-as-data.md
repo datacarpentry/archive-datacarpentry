@@ -1,4 +1,7 @@
 ## Dates as data ##
+
+Materials by: **Jeffrey Hollister**, **Alexander Duryee**, **Jennifer Bryan**, **Daisie Huang**, **Ben Marwick**, **Christie Bahlai**, **Owen Jones**, **Aleksandra Pawlik**
+
 Spreadsheet programs have numerous “useful features” which allow them to “handle” dates in a variety of ways.
 
 ![Many formats, many ambiguities](https://raw.githubusercontent.com/cbahlai/datacarpentry/master/lessons/excel/images/5_excel_dates_1.jpg)
