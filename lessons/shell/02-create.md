@@ -89,8 +89,8 @@ $ nano draft.txt
 > many programmers use [Emacs](http://www.gnu.org/software/emacs/) or
 > [Vim](http://www.vim.org/) (both of which are completely unintuitive,
 > even by Unix standards), or a graphical editor such as
-> [Gedit](http://projects.gnome.org/gedit/). On Windows, you may wish to
-> use [Notepad++](http://notepad-plus-plus.org/).
+> [Gedit](http://projects.gnome.org/gedit/) or [Sublime](http://sublimetext.com/).
+> On Windows, you may wish to use [Notepad++](http://notepad-plus-plus.org/).
 > 
 > No matter what editor you use, you will need to know where it searches
 > for and saves files. If you start it from the shell, it will (probably)
@@ -226,6 +226,8 @@ $ rmdir thesis
 > the directory contains sub-directories, `rm -r` does the same thing to
 > them, and so on. It's very handy, but can do a lot of damage if used
 > without care.
+>
+> There are plenty of commands using -r flag.
 
 Let's create that directory and file one more time.
 (Note that this time we're running `nano` with the path `thesis/draft.txt`,

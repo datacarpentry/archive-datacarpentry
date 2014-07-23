@@ -460,6 +460,14 @@ and so on.
 This is called [tab completion](../../gloss.html#tab-completion),
 and we will see it in many other tools as we go on.
 
+> #### Whitespace characters
+>
+> What if someone wants filename including spaces?
+> It is possible -
+> you just need to set name in '""' and use it this way afterwards,
+> however
+> no-one really does that, it can lead to pretty damaging mistakes.
+
 <div class="keypoints" markdown="1">
 
 #### Key Points
@@ -510,6 +518,6 @@ and we will see it in many other tools as we go on.
     2.  It changes the working directory to `/`.
     3.  It changes the working directory to the user's home directory.
     4.  It produces an error message.
-
+ 
 4.  What does the command `ls` do when used with the -s and -h arguments?
 </div>

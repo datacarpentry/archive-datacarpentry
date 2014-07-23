@@ -1,5 +1,9 @@
 ## Common mistakes by spreadsheet users
 
+Authors:**Christie Bahlai**, **Aleksandra Pawlik**<br>
+Contributors: **Jennifer Bryan**, **Alexander Duryee**, **Jeffrey Hollister**, **Daisie Huang**, **Owen Jones**, and
+**Ben Marwick**
+
 ## Not filling in zeroes ##
 -example: when entering count data for a community, nonzero observations may be rare- why bother if they’re mostly zeroes?
 Spreadsheets and statistical programs will likely mis-interpret blank cells that are meant to be zero. This is equivalent to leaving out data. Zero observations are real data! Leaving zero data blank is not good in a written lab notebook, but NEVER okay when you move your data into a digital format
