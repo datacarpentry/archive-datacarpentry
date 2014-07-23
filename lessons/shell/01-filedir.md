@@ -79,6 +79,27 @@ $ pwd
 ~~~
 {:class="out"}
 
+### Getting help
+
+To get help on any command, at the command line you can type
+
+~~~
+$ man command
+~~~
+
+e.g.
+
+~~~
+$ man pwd
+~~~
+
+man stand for 'manual' and gives you the information for each command. There's also a handy
+online tool that gives great explanations for commands, even the more complicated ones
+
+http://explainshell.com
+
+
+
 > #### Alphabet Soup
 > 
 > If the command to find out who we are is `whoami`, the command to find
