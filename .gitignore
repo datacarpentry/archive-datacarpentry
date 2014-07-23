@@ -1,0 +1,11 @@
+.Rproj.user
+R.Rproj
+.Rhistory
+.RData
+.Rapp.history
+*.Rout
+*.pyc
+*~
+.DS_Store
+.ipynb_checkpoints
+
