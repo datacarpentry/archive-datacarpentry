@@ -21,7 +21,10 @@ The output should look like this:
 ![Tables in Excel- example 2](../../../img/excel_tables_example1.png)
 
 
+
 A common grad student error I’ve seen is students that create multiple data tables within one spreadsheet. NEVER DO THIS. When you create multiple tables within one spreadsheet, you’re drawing false associations between things for the computer, which sees each row as an observation. You’re also potentially using the same field name in multiple places, which will make it harder to clean your data up into a usable form. The example below depicts the problem:
+
+![Tables in Excel- example 2](../../../img/excel_tables_example_sk_e1_p1.png)
 
 ![Classic spreadsheet mistake](../../../img/many_tables_one_sheet.jpg)
 
