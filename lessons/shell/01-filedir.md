@@ -83,15 +83,15 @@ $ pwd
 
 To get help on any command, at the command line you can type
 
-~~
+~~~
 $ man command
-~~
+~~~
 
 e.g.
 
-~~
+~~~
 $ man pwd
-~~
+~~~
 
 man stand for 'manual' and gives you the information for each command. There's also a handy
 online tool that gives great explanations for commands, even the more complicated ones
