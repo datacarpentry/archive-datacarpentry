@@ -8,9 +8,14 @@ In the [previous lesson](05-exporting-data.md) we discussed how to export Excel 
 
 However, there are some significant problems with this particular format. Quite often the data values themselves may include commas ('). In that case, the software which you use (including Excel) will most likely incorrectly display the data in columns. It is because the commas which are a part of the data values will be interpreted as a delimiter.
 
-For example, our data can look like this:
+For example, our data could look like this:
+	
+		species_id,genus,species,taxa
+		AB,Amphispiza,bilineata,Bird
+		AH,Ammospermophilus,harrisi,Rodent-not,censused
+		AS,Ammodramus,savannarum,Bird
 
-
-
+In record `AH,Ammospermophilus,harrisi,Rodent-not,censused` the value for *taxa* includes a comma (`Rodent-not,censused`). 
+If we try to read the above into Excel (or other spreadsheet programme), we will get something like this.
 
 Previous: [Exporting data from spreadsheets.](05-exporting-data.md)
