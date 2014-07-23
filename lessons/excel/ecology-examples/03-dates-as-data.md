@@ -41,7 +41,11 @@ So, can you convert all your dates into DOY format? Well, in excel, here’s a h
 
 
 
-[Exercise: pulling month out of Excel dates]
+#### Exercise: pulling month out of Excel dates ####
+
++   In the `data` subdirectory there is an example dataset:  [a short list of species](../../../data/biology/surveys-exercise-extract_month.csv) with one of the columns containing dates. 
++   Extract month from the dates to the new column.
++   Hint: use the dedicated function MONTH.
 
 Note: Excel is unable to parse dates from before 1899-12-31, and will thus leave these untouched.  If you’re mixing historic data from before and after this date, Excel will translate only the post-1900 dates into its internal format, thus resulting in mixed data.  If you’re working with historic data, be extremely careful with your dates!
 Excel also entertains a second date system, the 1904 date system, as the default in Excel for Macintosh. This system will assign a different serial number than the 1900 date system. https://support.microsoft.com/kb/180162 Because of this Dates must be checked for accuracy when exporting data from Excel (look for dates that are ~4 years off). http://datapub.cdlib.org/2014/04/10/abandon-all-hope-ye-who-enter-dates-in-excel/
