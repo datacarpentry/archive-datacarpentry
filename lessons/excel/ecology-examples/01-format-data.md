@@ -31,8 +31,7 @@ But what about worksheet tabs? That seems like an easy way to organize data, rig
 <!---
 #![Each table in separate worksheet](../../../img/excel_tables_example_sk_e1_p1.png)
 -->
-![Each table in separate worksheet](../../../img/excel_tables_example_sk_e1_p1_with_red_line.png)
-
+![Each table in separate worksheet](../../../img/excel_tables_example_sk_e1_p1_with_red_line2.png)
 
 
 This is bad practice for two reasons: 1) you are more likely to accidentally add inconsistencies to your data if each time you take a measurement, you start recording data in a new tab, and 2) even if you manage to prevent all inconsistencies from creeping in, you will add an extra step for yourself before you analyze the data because you will have to combine these data into a single datatable. You will have to explicitly tell the computer how to combine tabs- and if the tabs are inconsistently formatted, you might even have to do it by hand!
