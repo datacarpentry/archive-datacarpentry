@@ -346,7 +346,7 @@ She kills the job by typing Control-C,
 uses up-arrow to repeat the command,
 and edits it to read:
 
-~~~<!-- no explaination for using bash before goostats -->
+~~~
 $ for datafile in *[AB].txt; do echo $datafile; bash goostats $datafile stats-$datafile; done 
 ~~~
 {:class="in"}
