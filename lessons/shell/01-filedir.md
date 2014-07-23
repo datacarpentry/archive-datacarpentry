@@ -462,22 +462,11 @@ and we will see it in many other tools as we go on.
 
 > #### Whitespace characters
 >
-> What if someone wants filename including space?
+> What if someone wants filename including spaces?
 > It is possible -
 > you just need to set name in '""' and use it this way afterwards,
 > however
 > no-one really does that, it can lead to pretty damaging mistakes.
-
-> #### "Man"
->
-> `man` is the Unix "manual" command giving acces
-> to documentation provided by for needed command authors.
-> It is one of the most used sources of informations.
-> Try:
-> ~~~
-> $ man ls
-> ~~~
-> {:class="in"}
 
 <div class="keypoints" markdown="1">
 
