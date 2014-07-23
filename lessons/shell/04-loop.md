@@ -330,7 +330,7 @@ $ for datafile in *[AB].txt; do echo $datafile stats-$datafile; done
 {:class="in"}
 
 Using the left arrow key,
-Nelle backs up and changes the command `echo` to `goostats`:
+Nelle backs up and changes the command `echo` to `goostats` ('bash' will be explained in next lesson):
 
 ~~~
 $ for datafile in *[AB].txt; do bash goostats $datafile stats-$datafile; done

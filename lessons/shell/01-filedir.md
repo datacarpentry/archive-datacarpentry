@@ -447,15 +447,16 @@ and we will see it in many other tools as we go on.
 > however
 > no-one really does that, it can lead to pretty damaging mistakes.
 
-> #### Documentation
+> #### "Man"
 >
-> For every command there is manual provided,
-> it can be invoked by typing (taking `ls` for instance):
+> `man` is the Unix "manual" command giving acces
+> to documentation provided by for needed command authors.
+> It is one of the most used sources of informations.
+> Try:
 > ~~~
-> `$ man -k ls`
+> $ man ls
 > ~~~
 > {:class="in"}
-> '-k' stands for shortened documentation.
 
 <div class="keypoints" markdown="1">
 
