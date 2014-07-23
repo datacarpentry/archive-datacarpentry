@@ -1,5 +1,5 @@
 ---
-title: "00-intro.R"
+title: "00-intro.Rmd"
 author: "Jenny Bryan"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
@@ -26,12 +26,13 @@ library(dplyr)
 library(tidyr)
 library(xtable)
 
-if(!file.exists("data/lotr_clean.tsv")) {
+if(!file.exists(file.path("data", "lotr_clean.tsv"))) {
   download.file(paste0("https://raw.githubusercontent.com/jennybc/",
                        "lotr/master/lotr_clean.tsv"), 
-                destfile = "data/lotr_clean.tsv", method = "curl")
+                destfile = file.path("data", "lotr_clean.tsv"), method = "curl")
 }
-lotr_dat <- tbl_df(read.delim("data/lotr_clean.tsv", stringsAsFactor = FALSE))
+lotr_dat <- tbl_df(read.delim(file.path("data", "lotr_clean.tsv"),
+                              stringsAsFactor = FALSE))
 females <- c("Galadriel", "Arwen", "Lobelia Sackville-Baggins", "Rosie",
              "Mrs. Bracegirdle", "Eowyn", "Freda", "Rohan Maiden")
 lotr_dat <-
@@ -157,3 +158,13 @@ The figure was made with `ggplot2`, a popular package that implements the Gramma
   * Tidy data by Hadley Wickham. Preprint available <http://vita.had.co.nz/papers/tidy-data.pdf>.
     - [`tidyr`](https://github.com/hadley/tidyr), an R package to tidy data.
     - R packages by the same author that do heavier lifting in the data reshaping and aggregation department include [`reshape2`](https://github.com/hadley/reshape), [`plyr`](https://github.com/hadley/plyr) and [`dplyr`](https://github.com/hadley/dplyr).
+    
+```{r include = FALSE}
+for(film in c("The Fellowship Of The Ring", "The Two Towers",
+              "The Return Of The King")) {
+  tmp <- data.frame(Film = film, make_untidy_table(film))
+  fname <- file.path("data", paste0(gsub(" ", "_", film), ".csv"))
+  write.table(tmp, fname, quote = FALSE, sep = ",", row.names = FALSE)
+  }
+```
+

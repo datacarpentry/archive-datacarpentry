@@ -1,4 +1,4 @@
-# 00-intro.R
+# 00-intro.Rmd
 Jenny Bryan  
 `r format(Sys.time(), '%d %B, %Y')`  
 
@@ -22,7 +22,7 @@ I will give you a concrete example of some untidy data I created from [this data
 <tr>
 <td>
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Wed Jul 23 14:40:28 2014 -->
+<!-- Wed Jul 23 15:25:37 2014 -->
 <TABLE border=1>
 <CAPTION ALIGN="top"> The Fellowship Of The Ring </CAPTION>
 <TR> <TH> Race </TH> <TH> Female </TH> <TH> Male </TH>  </TR>
@@ -33,7 +33,7 @@ I will give you a concrete example of some untidy data I created from [this data
 </td>
 <td>
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Wed Jul 23 14:40:28 2014 -->
+<!-- Wed Jul 23 15:25:37 2014 -->
 <TABLE border=1>
 <CAPTION ALIGN="top"> The Two Towers </CAPTION>
 <TR> <TH> Race </TH> <TH> Female </TH> <TH> Male </TH>  </TR>
@@ -44,7 +44,7 @@ I will give you a concrete example of some untidy data I created from [this data
 </td>
 <td>
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Wed Jul 23 14:40:28 2014 -->
+<!-- Wed Jul 23 15:25:37 2014 -->
 <TABLE border=1>
 <CAPTION ALIGN="top"> The Return Of The King </CAPTION>
 <TR> <TH> Race </TH> <TH> Female </TH> <TH> Male </TH>  </TR>
@@ -67,7 +67,7 @@ In all cases, that data has been provided in a format designed for consumption b
 Here's how the same data looks in tidy form:
 
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Wed Jul 23 14:40:28 2014 -->
+<!-- Wed Jul 23 15:25:37 2014 -->
 <TABLE border=1>
 <TR> <TH> Film </TH> <TH> Race </TH> <TH> Gender </TH> <TH> Words </TH>  </TR>
   <TR> <TD> The Fellowship Of The Ring </TD> <TD> Elf </TD> <TD> F </TD> <TD align="right"> 1229 </TD> </TR>
@@ -154,3 +154,6 @@ The figure was made with `ggplot2`, a popular package that implements the Gramma
   * Tidy data by Hadley Wickham. Preprint available <http://vita.had.co.nz/papers/tidy-data.pdf>.
     - [`tidyr`](https://github.com/hadley/tidyr), an R package to tidy data.
     - R packages by the same author that do heavier lifting in the data reshaping and aggregation department include [`reshape2`](https://github.com/hadley/reshape), [`plyr`](https://github.com/hadley/plyr) and [`dplyr`](https://github.com/hadley/dplyr).
+    
+
+
