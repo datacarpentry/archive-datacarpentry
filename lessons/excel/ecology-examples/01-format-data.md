@@ -23,16 +23,18 @@ The output should look like this:
 ![Tables in Excel- example 2](../../../img/excel_tables_example1.png)
 
 
+
 A common grad student error I’ve seen is students that create multiple data tables within one spreadsheet. NEVER DO THIS. When you create multiple tables within one spreadsheet, you’re drawing false associations between things for the computer, which sees each row as an observation. You’re also potentially using the same field name in multiple places, which will make it harder to clean your data up into a usable form. The example below depicts the problem:
 
 ![Classic spreadsheet mistake](../../../img/many_tables_one_sheet.jpg)
 
 
 But what about worksheet tabs? That seems like an easy way to organize data, right? Well, yes and no. When you create extra tabs, you fail to allow the computer to see connections in the data that are there. Say, for instance, you make a separate tab for each day you take a measurement.
+<!---
+#![Each table in separate worksheet](../../../img/excel_tables_example_sk_e1_p1.png)
+-->
+![Each table in separate worksheet](../../../img/excel_tables_example_sk_e1_p1_wrl.png)
 
- 
-
-[create an example of this in Excel]
 
 This is bad practice for two reasons: 1) you are more likely to accidentally add inconsistencies to your data if each time you take a measurement, you start recording data in a new tab, and 2) even if you manage to prevent all inconsistencies from creeping in, you will add an extra step for yourself before you analyze the data because you will have to combine these data into a single datatable. You will have to explicitly tell the computer how to combine tabs- and if the tabs are inconsistently formatted, you might even have to do it by hand!
 
