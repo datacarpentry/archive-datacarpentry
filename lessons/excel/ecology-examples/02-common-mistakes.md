@@ -1,5 +1,9 @@
 ## Common mistakes by spreadsheet users
 
+Authors:**Christie Bahlai**, **Aleksandra Pawlik**<br>
+Contributors: **Jennifer Bryan**, **Alexander Duryee**, **Jeffrey Hollister**, **Daisie Huang**, **Owen Jones**, and
+**Ben Marwick**
+
 ## Not filling in zeroes ##
 -example: when entering count data for a community, nonzero observations may be rare- why bother if they’re mostly zeroes?
 Spreadsheets and statistical programs will likely mis-interpret blank cells that are meant to be zero. This is equivalent to leaving out data. Zero observations are real data! Leaving zero data blank is not good in a written lab notebook, but NEVER okay when you move your data into a digital format
@@ -37,7 +41,8 @@ Solution: most statistical programs can’t see Excel’s comments, and would be
 Example: you find one male, and one female of the same species. You enter this as 1M, 1F.
 Solution: Never, ever, EVER include more than one piece of information in a cell. If you need both these measurements, design your data sheet to include this information.
 
-[create an example of this in Excel]
+![Each table in separate worksheet](../../../img/excel_tables_example_sk_e2_p1_wrl.png)
+![Each table in separate worksheet](../../../img/excel_tables_example_sk_e2_p2.png)
 
 ## Field name problems ##
 Choose descriptive field names, but be careful not to include: spaces, numbers, or special characters of any kind. Spaces can be misinterpreted and some programs don’t like field names that are text strings that start with numbers.

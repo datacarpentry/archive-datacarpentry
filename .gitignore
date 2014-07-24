@@ -1,5 +1,5 @@
 .Rproj.user
-R.Rproj
+*.Rproj
 .Rhistory
 .RData
 .Rapp.history
