@@ -167,7 +167,7 @@ If you're skeptical about any of the above claims, it would be interesting to ge
 
 ### Where to next?
 
-In the next lesson *will point to 00-tidy.Rmd when it exists*, we'll show how to tidy this data.
+In [the next lesson](01-tidy.md), we'll show how to tidy this data.
 
 Our summing over `Gender` to get word counts for `Film * Race` was an example of __data aggregation__. The base function `aggregate()` does simple aggregation. For more flexibility, check out the packages `plyr` and `dplyr`. *point to other lessons when/if they exist?*
 
