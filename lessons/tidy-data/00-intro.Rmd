@@ -40,8 +40,8 @@ lotr_dat <-
          Film = factor(Film, levels = c("The Fellowship Of The Ring",
                                         "The Two Towers",
                                         "The Return Of The King")),
-         Gender = factor(ifelse(Character %in% females, "F", "M"),
-                         levels = c("F", "M")),
+         Gender = factor(ifelse(Character %in% females, "Female", "Male"),
+                         levels = c("Female", "Male")),
          Race = factor(Race))
 (lotr_tidy <- lotr_dat %>%
    filter(Race %in% c("Elf", "Hobbit", "Man")) %>%
@@ -63,8 +63,9 @@ make_untidy_table <- function(film) {
     filter(Film == film) %>%
     select(-Film)
   with(tmp,
-       data.frame(Race = Race[Gender == "F"], Female = Words[Gender == "F"],
-                  Male = Words[Gender == "M"]))
+       data.frame(Race = Race[Gender == "Female"],
+                  Female = Words[Gender == "Female"],
+                  Male = Words[Gender == "Male"]))
   }
 ```
 <table border = 1>
@@ -95,18 +96,18 @@ print(xtable(make_untidy_table("The Return Of The King"),
 
 We have one table per movie. In each table, I'm showing the total number of words spoken, by characters of different races and genders.
 
-You could imagine finding these three tables as separate worksheets in an Excel workbook. Or snuggled up next to each other in a single worksheet. Or hanging out in some cells on the side of a worksheet that containing the underlying data raw data. Or as tables on a webpage or in a Word document.
+You could imagine finding these three tables as separate worksheets in an Excel workbook. Or hanging out in some cells on the side of a worksheet that contains the underlying data raw data. Or as tables on a webpage or in a Word document.
 
 In all cases, that data has been provided in a format designed for consumption by *human eyeballs* (paraphrasing Murrell; see Resources). The format makes it easy for a *human* to look up the number of words spoken by female elves in The Two Towers. But this format actually makes it pretty hard for a *computer* to pull out such counts and, more importantly, to compute on them or graph them.
 
 ## Exercises
 
-Look at the 3 tables above and try to answer these questions:
+Look at the tables above and answer these questions:
 
   * What's the total number of words spoken by male hobbits?
   * Does a certain `Race` dominate a movie? Does the dominant `Race` differ across the movies?
   
-How would you automate such a task if there were many more movies and/or `Races`?
+How well does your approach scale if there were many more movies or if I provided you with updated data that includes all the `Races` (e.g. dwarves, orcs, etc.)?
 
 ## Tidy Lord of the Rings data
 
@@ -116,11 +117,11 @@ Here's how the same data looks in tidy form:
 print(xtable(lotr_tidy, digits = 0),include.rownames = FALSE, type='html')
 ```
 
-Notice that tidy data is generally taller and narrower. Certain elements get repated alot, e.g. `Hobbit`. It doesn't "fit on a page" as nicely, so we often instinctively resist it. But, unless and until you're making the final product for a textual presentation of data, ignore your yearning to see the data in a compact form.
+Notice that tidy data is generally taller and narrower. It doesn't fit nicely on the page. Certain elements get repeated alot, e.g. `Hobbit`. For these reasons, we often instinctively resist _tidy_ data as inefficient or ugly. But, unless and until you're making the final product for a textual presentation of data, ignore your yearning to see the data in a compact form.
 
 ## Benefits of tidy data
 
-With the data in tidy form, it's natural to *get a computer* to do further summarization or to make a figure. Let's answer the questions posed above.
+With the data in tidy form, it's natural to *get a computer* to do further summarization or to make a figure. This assumes you're using language that is "data-aware", which R certainly is. Let's answer the questions posed above.
 
 #### What's the total number of words spoken by male hobbits?
 
@@ -128,7 +129,7 @@ With the data in tidy form, it's natural to *get a computer* to do further summa
 aggregate(Words ~ Race * Gender, data = lotr_tidy, FUN = sum)
 ```
 
-Once we enlist a computer, it takes just one line of code to compute the word total for both genders of all `Races`. The total number of words spoken by male hobbits is `r lotr_tidy %>% filter(Race == 'Hobbit' & Gender == 'M') %>% summarize(sum(Words))`.
+Now it takes just one line of code to compute the word total for both genders of all `Races` across all `Films`. The total number of words spoken by male hobbits is `r lotr_tidy %>% filter(Race == 'Hobbit' & Gender == 'Male') %>% summarize(sum(Words))`. It was important here to have all word counts in a single variable, within a data frame that also included variables for `Race` and `Gender`.
 
 #### Does a certain `Race` dominate a movie? Does the dominant `Race` differ across the movies?
 
@@ -153,6 +154,8 @@ p + geom_bar(stat = "identity", position = "dodge") +
 ```
 
 `Hobbits` are featured heavily in The Fellowhip of the Ring, where as `Men` had a lot more screen time in The Two Towers. They were equally prominent in the last movie, The Return of the King.
+
+Again, it was important to have all the data in a single data frame, all word counts in a single variable, and associated variables for `Film` and `Race`.
 
 ## Take home message
 
@@ -181,10 +184,24 @@ The figure was made with `ggplot2`, a popular package that implements the Gramma
     - R packages by the same author that do heavier lifting in the data reshaping and aggregation department include [`reshape2`](https://github.com/hadley/reshape), [`plyr`](https://github.com/hadley/plyr) and [`dplyr`](https://github.com/hadley/dplyr).
     
 ```{r include = FALSE}
+## leaves files behind for lesson on how to tidy
 for(film in c("The Fellowship Of The Ring", "The Two Towers",
               "The Return Of The King")) {
   tmp <- data.frame(Film = film, make_untidy_table(film))
   fname <- file.path("data", paste0(gsub(" ", "_", film), ".csv"))
+  write.table(tmp, fname, quote = FALSE, sep = ",", row.names = FALSE)
+  }
+
+## leaves files behind for exercises re: how to tidy
+for(gender in c("Female", "Male")) {
+  tmp <- lotr_tidy %>% filter(Gender == gender)
+  tmp <- with(tmp,
+              data.frame(Gender = gender,
+                         Film = Film[Race == "Elf"],
+                         Elf = Words[Race == "Elf"],
+                         Hobbit = Words[Race == "Hobbit"],
+                         Man = Words[Race == "Man"]))
+  fname <- file.path("data", paste0(gender, ".csv"))
   write.table(tmp, fname, quote = FALSE, sep = ",", row.names = FALSE)
   }
 ```

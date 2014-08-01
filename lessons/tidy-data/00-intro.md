@@ -22,7 +22,7 @@ I will give you a concrete example of some untidy data I created from [this data
 <tr>
 <td>
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Wed Jul 23 16:07:08 2014 -->
+<!-- Fri Aug  1 15:08:00 2014 -->
 <TABLE border=1>
 <CAPTION ALIGN="top"> The Fellowship Of The Ring </CAPTION>
 <TR> <TH> Race </TH> <TH> Female </TH> <TH> Male </TH>  </TR>
@@ -33,7 +33,7 @@ I will give you a concrete example of some untidy data I created from [this data
 </td>
 <td>
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Wed Jul 23 16:07:08 2014 -->
+<!-- Fri Aug  1 15:08:00 2014 -->
 <TABLE border=1>
 <CAPTION ALIGN="top"> The Two Towers </CAPTION>
 <TR> <TH> Race </TH> <TH> Female </TH> <TH> Male </TH>  </TR>
@@ -44,7 +44,7 @@ I will give you a concrete example of some untidy data I created from [this data
 </td>
 <td>
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Wed Jul 23 16:07:08 2014 -->
+<!-- Fri Aug  1 15:08:00 2014 -->
 <TABLE border=1>
 <CAPTION ALIGN="top"> The Return Of The King </CAPTION>
 <TR> <TH> Race </TH> <TH> Female </TH> <TH> Male </TH>  </TR>
@@ -58,52 +58,52 @@ I will give you a concrete example of some untidy data I created from [this data
 
 We have one table per movie. In each table, I'm showing the total number of words spoken, by characters of different races and genders.
 
-You could imagine finding these three tables as separate worksheets in an Excel workbook. Or snuggled up next to each other in a single worksheet. Or hanging out in some cells on the side of a worksheet that containing the underlying data raw data. Or as tables on a webpage or in a Word document.
+You could imagine finding these three tables as separate worksheets in an Excel workbook. Or hanging out in some cells on the side of a worksheet that contains the underlying data raw data. Or as tables on a webpage or in a Word document.
 
 In all cases, that data has been provided in a format designed for consumption by *human eyeballs* (paraphrasing Murrell; see Resources). The format makes it easy for a *human* to look up the number of words spoken by female elves in The Two Towers. But this format actually makes it pretty hard for a *computer* to pull out such counts and, more importantly, to compute on them or graph them.
 
 ## Exercises
 
-Look at the 3 tables above and try to answer these questions:
+Look at the tables above and answer these questions:
 
   * What's the total number of words spoken by male hobbits?
   * Does a certain `Race` dominate a movie? Does the dominant `Race` differ across the movies?
   
-How would you automate such a task if there were many more movies and/or `Races`?
+How well does your approach scale if there were many more movies or if I provided you with updated data that includes all the `Races` (e.g. dwarves, orcs, etc.)?
 
 ## Tidy Lord of the Rings data
 
 Here's how the same data looks in tidy form:
 
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Wed Jul 23 16:07:09 2014 -->
+<!-- Fri Aug  1 15:08:00 2014 -->
 <TABLE border=1>
 <TR> <TH> Film </TH> <TH> Race </TH> <TH> Gender </TH> <TH> Words </TH>  </TR>
-  <TR> <TD> The Fellowship Of The Ring </TD> <TD> Elf </TD> <TD> F </TD> <TD align="right"> 1229 </TD> </TR>
-  <TR> <TD> The Fellowship Of The Ring </TD> <TD> Elf </TD> <TD> M </TD> <TD align="right"> 971 </TD> </TR>
-  <TR> <TD> The Fellowship Of The Ring </TD> <TD> Hobbit </TD> <TD> F </TD> <TD align="right"> 14 </TD> </TR>
-  <TR> <TD> The Fellowship Of The Ring </TD> <TD> Hobbit </TD> <TD> M </TD> <TD align="right"> 3644 </TD> </TR>
-  <TR> <TD> The Fellowship Of The Ring </TD> <TD> Man </TD> <TD> F </TD> <TD align="right"> 0 </TD> </TR>
-  <TR> <TD> The Fellowship Of The Ring </TD> <TD> Man </TD> <TD> M </TD> <TD align="right"> 1995 </TD> </TR>
-  <TR> <TD> The Two Towers </TD> <TD> Elf </TD> <TD> F </TD> <TD align="right"> 331 </TD> </TR>
-  <TR> <TD> The Two Towers </TD> <TD> Elf </TD> <TD> M </TD> <TD align="right"> 513 </TD> </TR>
-  <TR> <TD> The Two Towers </TD> <TD> Hobbit </TD> <TD> F </TD> <TD align="right"> 0 </TD> </TR>
-  <TR> <TD> The Two Towers </TD> <TD> Hobbit </TD> <TD> M </TD> <TD align="right"> 2463 </TD> </TR>
-  <TR> <TD> The Two Towers </TD> <TD> Man </TD> <TD> F </TD> <TD align="right"> 401 </TD> </TR>
-  <TR> <TD> The Two Towers </TD> <TD> Man </TD> <TD> M </TD> <TD align="right"> 3589 </TD> </TR>
-  <TR> <TD> The Return Of The King </TD> <TD> Elf </TD> <TD> F </TD> <TD align="right"> 183 </TD> </TR>
-  <TR> <TD> The Return Of The King </TD> <TD> Elf </TD> <TD> M </TD> <TD align="right"> 510 </TD> </TR>
-  <TR> <TD> The Return Of The King </TD> <TD> Hobbit </TD> <TD> F </TD> <TD align="right"> 2 </TD> </TR>
-  <TR> <TD> The Return Of The King </TD> <TD> Hobbit </TD> <TD> M </TD> <TD align="right"> 2673 </TD> </TR>
-  <TR> <TD> The Return Of The King </TD> <TD> Man </TD> <TD> F </TD> <TD align="right"> 268 </TD> </TR>
-  <TR> <TD> The Return Of The King </TD> <TD> Man </TD> <TD> M </TD> <TD align="right"> 2459 </TD> </TR>
+  <TR> <TD> The Fellowship Of The Ring </TD> <TD> Elf </TD> <TD> Female </TD> <TD align="right"> 1229 </TD> </TR>
+  <TR> <TD> The Fellowship Of The Ring </TD> <TD> Elf </TD> <TD> Male </TD> <TD align="right"> 971 </TD> </TR>
+  <TR> <TD> The Fellowship Of The Ring </TD> <TD> Hobbit </TD> <TD> Female </TD> <TD align="right"> 14 </TD> </TR>
+  <TR> <TD> The Fellowship Of The Ring </TD> <TD> Hobbit </TD> <TD> Male </TD> <TD align="right"> 3644 </TD> </TR>
+  <TR> <TD> The Fellowship Of The Ring </TD> <TD> Man </TD> <TD> Female </TD> <TD align="right"> 0 </TD> </TR>
+  <TR> <TD> The Fellowship Of The Ring </TD> <TD> Man </TD> <TD> Male </TD> <TD align="right"> 1995 </TD> </TR>
+  <TR> <TD> The Two Towers </TD> <TD> Elf </TD> <TD> Female </TD> <TD align="right"> 331 </TD> </TR>
+  <TR> <TD> The Two Towers </TD> <TD> Elf </TD> <TD> Male </TD> <TD align="right"> 513 </TD> </TR>
+  <TR> <TD> The Two Towers </TD> <TD> Hobbit </TD> <TD> Female </TD> <TD align="right"> 0 </TD> </TR>
+  <TR> <TD> The Two Towers </TD> <TD> Hobbit </TD> <TD> Male </TD> <TD align="right"> 2463 </TD> </TR>
+  <TR> <TD> The Two Towers </TD> <TD> Man </TD> <TD> Female </TD> <TD align="right"> 401 </TD> </TR>
+  <TR> <TD> The Two Towers </TD> <TD> Man </TD> <TD> Male </TD> <TD align="right"> 3589 </TD> </TR>
+  <TR> <TD> The Return Of The King </TD> <TD> Elf </TD> <TD> Female </TD> <TD align="right"> 183 </TD> </TR>
+  <TR> <TD> The Return Of The King </TD> <TD> Elf </TD> <TD> Male </TD> <TD align="right"> 510 </TD> </TR>
+  <TR> <TD> The Return Of The King </TD> <TD> Hobbit </TD> <TD> Female </TD> <TD align="right"> 2 </TD> </TR>
+  <TR> <TD> The Return Of The King </TD> <TD> Hobbit </TD> <TD> Male </TD> <TD align="right"> 2673 </TD> </TR>
+  <TR> <TD> The Return Of The King </TD> <TD> Man </TD> <TD> Female </TD> <TD align="right"> 268 </TD> </TR>
+  <TR> <TD> The Return Of The King </TD> <TD> Man </TD> <TD> Male </TD> <TD align="right"> 2459 </TD> </TR>
    </TABLE>
 
-Notice that tidy data is generally taller and narrower. Certain elements get repated alot, e.g. `Hobbit`. It doesn't "fit on a page" as nicely, so we often instinctively resist it. But, unless and until you're making the final product for a textual presentation of data, ignore your yearning to see the data in a compact form.
+Notice that tidy data is generally taller and narrower. It doesn't fit nicely on the page. Certain elements get repeated alot, e.g. `Hobbit`. For these reasons, we often instinctively resist _tidy_ data as inefficient or ugly. But, unless and until you're making the final product for a textual presentation of data, ignore your yearning to see the data in a compact form.
 
 ## Benefits of tidy data
 
-With the data in tidy form, it's natural to *get a computer* to do further summarization or to make a figure. Let's answer the questions posed above.
+With the data in tidy form, it's natural to *get a computer* to do further summarization or to make a figure. This assumes you're using language that is "data-aware", which R certainly is. Let's answer the questions posed above.
 
 #### What's the total number of words spoken by male hobbits?
 
@@ -114,15 +114,15 @@ aggregate(Words ~ Race * Gender, data = lotr_tidy, FUN = sum)
 
 ```
 ##     Race Gender Words
-## 1    Elf      F  1743
-## 2 Hobbit      F    16
-## 3    Man      F   669
-## 4    Elf      M  1994
-## 5 Hobbit      M  8780
-## 6    Man      M  8043
+## 1    Elf Female  1743
+## 2 Hobbit Female    16
+## 3    Man Female   669
+## 4    Elf   Male  1994
+## 5 Hobbit   Male  8780
+## 6    Man   Male  8043
 ```
 
-Once we enlist a computer, it takes just one line of code to compute the word total for both genders of all `Races`. The total number of words spoken by male hobbits is 8780.
+Now it takes just one line of code to compute the word total for both genders of all `Races` across all `Films`. The total number of words spoken by male hobbits is 8780. It was important here to have all word counts in a single variable, within a data frame that also included variables for `Race` and `Gender`.
 
 #### Does a certain `Race` dominate a movie? Does the dominant `Race` differ across the movies?
 
@@ -160,6 +160,8 @@ p + geom_bar(stat = "identity", position = "dodge") +
 ![plot of chunk barchart-lotr-words-by-film-race](./00-intro_files/figure-html/barchart-lotr-words-by-film-race.png) 
 
 `Hobbits` are featured heavily in The Fellowhip of the Ring, where as `Men` had a lot more screen time in The Two Towers. They were equally prominent in the last movie, The Return of the King.
+
+Again, it was important to have all the data in a single data frame, all word counts in a single variable, and associated variables for `Film` and `Race`.
 
 ## Take home message
 
