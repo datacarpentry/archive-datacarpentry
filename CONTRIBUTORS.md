@@ -6,6 +6,7 @@ instruction of lessons by Karen Cranston, Hilmar Lapp, Tracy Teal and Ethan Whit
 ## Data
 
 ### Biology
+
 Data is from the paper S. K. Morgan Ernest, Thomas J. Valone, and James H. Brown. 2009. Long-term monitoring and experimental manipulation of a Chihuahuan Desert ecosystem near Portal, Arizona, USA. Ecology 90:1708.
 
 http://esapubs.org/archive/ecol/E090/118/
@@ -30,11 +31,13 @@ Original materials adapted from Software Carpentry SQL lessons for ecologists by
 Ethan White, which were adapted from Greg Wilson's original SQL lessons.
 
 ### R materials
+
 Original materials adapted from SWC Python lessons by Sarah Supp.
 John Blischak led the continued development of materials with contributions
 from Gavin Simpson, Tracy Teal, Greg Wilson, Diego Barneche, Stephen Turner and Karthik Ram. 
 
 ### Spreadsheet Best Practices
+
 Original materials adapted from [Practical Data Management for Bug Counters](http://practicaldatamanagement.wordpress.com/) by Christie Bahlai <br>
 Christie Bahlai and Aleksandra Pawlik led the continued development of materials with contributions
 from Jennifer Bryan, Alexander Duryee, Jeffrey Hollister,  Daisie Huang, Owen Jones, and Ben Marwick
