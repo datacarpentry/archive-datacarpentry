@@ -8,7 +8,8 @@ Data used: words spoken by characters of different races and gender in the Lord 
 
 Learner-facing dependencies:
 
-  * `tidyr` is the only true dependency of this lesson
+  * files in the `data` sub-directory of this lesson
+  * `tidyr` package (only true dependency)
   * `ggplot2` is used for illustration but is not mission critical 
   * `dplyr` and `reshape2` are used in the bonus content
 
@@ -16,3 +17,11 @@ Instructor dependencies:
 
   * `curl` if you execute the code to grab the Lord of the Rings data used in examples from GitHub. However I include the input `.tsv` in the `data` sub-directory, so data download is avoidable.
   * `rmarkdown`, `knitr`, and `xtable` if you want to compile the `Rmd` to `md` and `html`
+
+Possible to do's
+
+  * Domain-specific exercises could be added instead of or in addition to the existing exercises. Instructor could show basic principles and code using the LOTR data via projector and then pose challenges for the students using completely different data.
+  * Cover more common data tidying tasks, such as:
+    - split a variable that contains values and units into two separate variables, e.g. `10 km_square` becomes `10` and `km_square`
+    - simple joins or merges of two data tables, e.g. add info on LOTR film duration or box office gross
+    - renaming variables, revaluing factors, etc. to make data more self-documenting
