@@ -166,7 +166,7 @@ Watch out for how __untidy__ data seduces you into working with it more than you
 
 ### Where to next?
 
-In the supplement *will point to 03-more-tidy.Rmd when it exists*, I show how to tidy this data using only base R functions. At the other extreme, I also show how to more advanced data prep with functions from other packages.
+In the [optional bonus content](02-tidy-bonus-content.md), I show how to tidy this data using only base R functions. At the other extreme, I also show how to tidy with add-on packages that are capable of more advanced data manipulations.
 
 ### Resources
 
