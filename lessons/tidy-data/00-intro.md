@@ -22,7 +22,7 @@ I will give you a concrete example of some untidy data I created from [this data
 <tr>
 <td>
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Fri Aug  1 15:18:32 2014 -->
+<!-- Sat Aug  2 11:22:36 2014 -->
 <TABLE border=1>
 <CAPTION ALIGN="top"> The Fellowship Of The Ring </CAPTION>
 <TR> <TH> Race </TH> <TH> Female </TH> <TH> Male </TH>  </TR>
@@ -33,7 +33,7 @@ I will give you a concrete example of some untidy data I created from [this data
 </td>
 <td>
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Fri Aug  1 15:18:32 2014 -->
+<!-- Sat Aug  2 11:22:36 2014 -->
 <TABLE border=1>
 <CAPTION ALIGN="top"> The Two Towers </CAPTION>
 <TR> <TH> Race </TH> <TH> Female </TH> <TH> Male </TH>  </TR>
@@ -44,7 +44,7 @@ I will give you a concrete example of some untidy data I created from [this data
 </td>
 <td>
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Fri Aug  1 15:18:32 2014 -->
+<!-- Sat Aug  2 11:22:36 2014 -->
 <TABLE border=1>
 <CAPTION ALIGN="top"> The Return Of The King </CAPTION>
 <TR> <TH> Race </TH> <TH> Female </TH> <TH> Male </TH>  </TR>
@@ -76,7 +76,7 @@ How well does your approach scale if there were many more movies or if I provide
 Here's how the same data looks in tidy form:
 
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Fri Aug  1 15:18:32 2014 -->
+<!-- Sat Aug  2 11:22:36 2014 -->
 <TABLE border=1>
 <TR> <TH> Film </TH> <TH> Race </TH> <TH> Gender </TH> <TH> Words </TH>  </TR>
   <TR> <TD> The Fellowship Of The Ring </TD> <TD> Elf </TD> <TD> Female </TD> <TD align="right"> 1229 </TD> </TR>
