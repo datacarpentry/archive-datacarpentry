@@ -30,7 +30,7 @@ str(fship)
 
 ## Collect untidy Lord of the Rings data into a single data frame
 
-We now have one data frame per `Film`, each with a common set of 4 variables. Step one in tidying this data is to glue them together into one data frame, stacking them up row wise.
+We now have one data frame per `Film`, each with a common set of 4 variables. Step one in tidying this data is to glue them together into one data frame, stacking them up row wise. I'll call this row-binding and use the base function `rbind()`.
 
 ```{r}
 lotr_untidy <- rbind(fship, ttow, rking)
@@ -62,6 +62,8 @@ Now we write this multi-film, tidy dataset to file for use in various downstream
 write.table(lotr_tidy, file = file.path("data", "lotr_tidy.csv"),
             quote = FALSE, sep = ",", row.names = FALSE)
 ```
+
+You can inspect this delimited file here: [data/lotr_tidy.csv](data/lots_tidy.csv).
 
 ## Exercises
 

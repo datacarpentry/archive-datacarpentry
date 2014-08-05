@@ -14,7 +14,7 @@ An important aspect of "writing data for computers" is to make your data __tidy_
   * Each column is a variable
   * Each row is an observation
 
-If you are struggling to make a figure, for example, stop and think hard about whether your data is __tidy__. Untidiness is an extremely common, often overlooked cause of unnecessary agony in data analysis and visualization.
+If you are struggling to make a figure, for example, stop and think hard about whether your data is __tidy__. Untidiness is a common, often overlooked cause of agony in data analysis and visualization.
 
 ## Lord of the Rings example
 
@@ -94,11 +94,11 @@ print(xtable(make_untidy_table("The Return Of The King"),
 </tr>
 </table>
 
-We have one table per movie. In each table, I'm showing the total number of words spoken, by characters of different races and genders.
+We have one table per movie. In each table, we have the total number of words spoken, by characters of different races and genders.
 
 You could imagine finding these three tables as separate worksheets in an Excel workbook. Or hanging out in some cells on the side of a worksheet that contains the underlying data raw data. Or as tables on a webpage or in a Word document.
 
-In all cases, that data has been provided in a format designed for consumption by *human eyeballs* (paraphrasing Murrell; see Resources). The format makes it easy for a *human* to look up the number of words spoken by female elves in The Two Towers. But this format actually makes it pretty hard for a *computer* to pull out such counts and, more importantly, to compute on them or graph them.
+This data has been formatted for consumption by *human eyeballs* (paraphrasing Murrell; see Resources). The format makes it easy for a *human* to look up the number of words spoken by female elves in The Two Towers. But this format actually makes it pretty hard for a *computer* to pull out such counts and, more importantly, to compute on them or graph them.
 
 ## Exercises
 
@@ -117,7 +117,7 @@ Here's how the same data looks in tidy form:
 print(xtable(lotr_tidy, digits = 0),include.rownames = FALSE, type='html')
 ```
 
-Notice that tidy data is generally taller and narrower. It doesn't fit nicely on the page. Certain elements get repeated alot, e.g. `Hobbit`. For these reasons, we often instinctively resist _tidy_ data as inefficient or ugly. But, unless and until you're making the final product for a textual presentation of data, ignore your yearning to see the data in a compact form.
+Notice that tidy data is generally taller and narrower. It doesn't fit nicely on the page. Certain elements get repeated alot, e.g. `Hobbit`. For these reasons, we often instinctively resist __tidy__ data as inefficient or ugly. But, unless and until you're making the final product for a textual presentation of data, ignore your yearning to see the data in a compact form.
 
 ## Benefits of tidy data
 
@@ -144,7 +144,7 @@ First, we sum across `Gender`, to obtain word counts for the different races by 
 ```{r}
 (by_race_film <- aggregate(Words ~ Race * Film, data = lotr_tidy, FUN = sum))
 ```
-We can start hard at those numbers to answer the question. But even nicer is to depict the word counts we just computed in a barchart. 
+We can stare hard at those numbers to answer the question. But even nicer is to depict the word counts we just computed in a barchart. 
 
 ```{r barchart-lotr-words-by-film-race}
 library(ggplot2)

@@ -55,7 +55,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <div id="header">
 <h1 class="title">01-tidy.Rmd</h1>
 <h4 class="author"><em>Jenny Bryan</em></h4>
-<h4 class="date"><em>02 August, 2014</em></h4>
+<h4 class="date"><em>05 August, 2014</em></h4>
 </div>
 
 
@@ -86,7 +86,7 @@ rking</code></pre>
 </div>
 <div id="collect-untidy-lord-of-the-rings-data-into-a-single-data-frame" class="section level2">
 <h2>Collect untidy Lord of the Rings data into a single data frame</h2>
-<p>We now have one data frame per <code>Film</code>, each with a common set of 4 variables. Step one in tidying this data is to glue them together into one data frame, stacking them up row wise.</p>
+<p>We now have one data frame per <code>Film</code>, each with a common set of 4 variables. Step one in tidying this data is to glue them together into one data frame, stacking them up row wise. I’ll call this row-binding and use the base function <code>rbind()</code>.</p>
 <pre class="r"><code>lotr_untidy &lt;- rbind(fship, ttow, rking)
 str(lotr_untidy)</code></pre>
 <pre><code>## 'data.frame':    9 obs. of  4 variables:
@@ -143,6 +143,7 @@ lotr_tidy</code></pre>
 <p>Now we write this multi-film, tidy dataset to file for use in various downstream scripts for further analysis and visualization. This would make an excellent file to share on the web with others, providing a tool-agnostic, ready-to-analyze entry point for anyone wishing to play with this data.</p>
 <pre class="r"><code>write.table(lotr_tidy, file = file.path(&quot;data&quot;, &quot;lotr_tidy.csv&quot;),
             quote = FALSE, sep = &quot;,&quot;, row.names = FALSE)</code></pre>
+<p>You can inspect this delimited file here: <a href="data/lots_tidy.csv">data/lotr_tidy.csv</a>.</p>
 </div>
 <div id="exercises" class="section level2">
 <h2>Exercises</h2>

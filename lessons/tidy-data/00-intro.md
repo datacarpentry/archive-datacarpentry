@@ -9,7 +9,7 @@ An important aspect of "writing data for computers" is to make your data __tidy_
   * Each column is a variable
   * Each row is an observation
 
-If you are struggling to make a figure, for example, stop and think hard about whether your data is __tidy__. Untidiness is an extremely common, often overlooked cause of unnecessary agony in data analysis and visualization.
+If you are struggling to make a figure, for example, stop and think hard about whether your data is __tidy__. Untidiness is a common, often overlooked cause of agony in data analysis and visualization.
 
 ## Lord of the Rings example
 
@@ -22,7 +22,7 @@ I will give you a concrete example of some untidy data I created from [this data
 <tr>
 <td>
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Sat Aug  2 11:22:36 2014 -->
+<!-- Tue Aug  5 13:24:16 2014 -->
 <TABLE border=1>
 <CAPTION ALIGN="top"> The Fellowship Of The Ring </CAPTION>
 <TR> <TH> Race </TH> <TH> Female </TH> <TH> Male </TH>  </TR>
@@ -33,7 +33,7 @@ I will give you a concrete example of some untidy data I created from [this data
 </td>
 <td>
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Sat Aug  2 11:22:36 2014 -->
+<!-- Tue Aug  5 13:24:16 2014 -->
 <TABLE border=1>
 <CAPTION ALIGN="top"> The Two Towers </CAPTION>
 <TR> <TH> Race </TH> <TH> Female </TH> <TH> Male </TH>  </TR>
@@ -44,7 +44,7 @@ I will give you a concrete example of some untidy data I created from [this data
 </td>
 <td>
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Sat Aug  2 11:22:36 2014 -->
+<!-- Tue Aug  5 13:24:16 2014 -->
 <TABLE border=1>
 <CAPTION ALIGN="top"> The Return Of The King </CAPTION>
 <TR> <TH> Race </TH> <TH> Female </TH> <TH> Male </TH>  </TR>
@@ -56,11 +56,11 @@ I will give you a concrete example of some untidy data I created from [this data
 </tr>
 </table>
 
-We have one table per movie. In each table, I'm showing the total number of words spoken, by characters of different races and genders.
+We have one table per movie. In each table, we have the total number of words spoken, by characters of different races and genders.
 
 You could imagine finding these three tables as separate worksheets in an Excel workbook. Or hanging out in some cells on the side of a worksheet that contains the underlying data raw data. Or as tables on a webpage or in a Word document.
 
-In all cases, that data has been provided in a format designed for consumption by *human eyeballs* (paraphrasing Murrell; see Resources). The format makes it easy for a *human* to look up the number of words spoken by female elves in The Two Towers. But this format actually makes it pretty hard for a *computer* to pull out such counts and, more importantly, to compute on them or graph them.
+This data has been formatted for consumption by *human eyeballs* (paraphrasing Murrell; see Resources). The format makes it easy for a *human* to look up the number of words spoken by female elves in The Two Towers. But this format actually makes it pretty hard for a *computer* to pull out such counts and, more importantly, to compute on them or graph them.
 
 ## Exercises
 
@@ -76,7 +76,7 @@ How well does your approach scale if there were many more movies or if I provide
 Here's how the same data looks in tidy form:
 
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Sat Aug  2 11:22:36 2014 -->
+<!-- Tue Aug  5 13:24:16 2014 -->
 <TABLE border=1>
 <TR> <TH> Film </TH> <TH> Race </TH> <TH> Gender </TH> <TH> Words </TH>  </TR>
   <TR> <TD> The Fellowship Of The Ring </TD> <TD> Elf </TD> <TD> Female </TD> <TD align="right"> 1229 </TD> </TR>
@@ -99,7 +99,7 @@ Here's how the same data looks in tidy form:
   <TR> <TD> The Return Of The King </TD> <TD> Man </TD> <TD> Male </TD> <TD align="right"> 2459 </TD> </TR>
    </TABLE>
 
-Notice that tidy data is generally taller and narrower. It doesn't fit nicely on the page. Certain elements get repeated alot, e.g. `Hobbit`. For these reasons, we often instinctively resist _tidy_ data as inefficient or ugly. But, unless and until you're making the final product for a textual presentation of data, ignore your yearning to see the data in a compact form.
+Notice that tidy data is generally taller and narrower. It doesn't fit nicely on the page. Certain elements get repeated alot, e.g. `Hobbit`. For these reasons, we often instinctively resist __tidy__ data as inefficient or ugly. But, unless and until you're making the final product for a textual presentation of data, ignore your yearning to see the data in a compact form.
 
 ## Benefits of tidy data
 
@@ -147,7 +147,7 @@ First, we sum across `Gender`, to obtain word counts for the different races by 
 ## 8 Hobbit     The Return Of The King  2675
 ## 9    Man     The Return Of The King  2727
 ```
-We can start hard at those numbers to answer the question. But even nicer is to depict the word counts we just computed in a barchart. 
+We can stare hard at those numbers to answer the question. But even nicer is to depict the word counts we just computed in a barchart. 
 
 
 ```r
