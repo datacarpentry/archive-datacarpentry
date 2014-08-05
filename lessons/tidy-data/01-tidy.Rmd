@@ -63,7 +63,7 @@ write.table(lotr_tidy, file = file.path("data", "lotr_tidy.csv"),
             quote = FALSE, sep = ",", row.names = FALSE)
 ```
 
-You can inspect this delimited file here: [data/lotr_tidy.csv](data/lots_tidy.csv).
+You can inspect this delimited file here: [data/lotr_tidy.csv](data/lotr_tidy.csv).
 
 ## Exercises
 
