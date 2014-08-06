@@ -4,7 +4,7 @@ Data used: words spoken by characters of different races and gender in the Lord 
 
   * [00-intro](00-intro.md) shows untidy and tidy data. Then we demonstrate how tidy data is more useful for analysis and visualization. Includes references, resources, and exercises.
   * [01-tidy](01-tidy.md) show __how__ to tidy data, using `gather()` from the `tidyr` package. Includes references, resources, and exercises.
-  * [02-tidy-bonus-content](02-tidy-bonus-content.md) is not part of the lesson but may be useful as learners try to apply the principles of tidy data in real world settings. Includes links to packages used.
+  * [02-tidy-bonus-content](02-tidy-bonus-content.md) is not part of the lesson but may be useful as learners try to apply the principles of tidy data in more general settings. Includes links to packages used.
 
 Learner-facing dependencies:
 

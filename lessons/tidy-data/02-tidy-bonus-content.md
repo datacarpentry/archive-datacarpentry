@@ -177,7 +177,7 @@ str(lotr_untidy_5)
 
 We get the same warning as before about unequal factor levels for `Film`; resolve as shown above, if you want `Film` to be factor vs character.
 
-The `rbind_all()` function from `dplyr` probably represents the best all around solution, because it address both pain points at once: it is memory efficient and it can operate on a list of data frames.
+The `rbind_all()` function from `dplyr` probably represents the best all around solution, because it addresses both pain points at once: it is memory efficient and it can operate on a list of data frames.
 
 #### Other options
 
