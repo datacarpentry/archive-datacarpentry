@@ -15,7 +15,7 @@ Learner-facing dependencies:
 
 Instructor dependencies:
 
-  * `curl` if you execute the code to grab the Lord of the Rings data used in examples from GitHub. However I include the input `.tsv` in the `data` sub-directory, so data download is avoidable.
+  * `curl` if you execute the code to grab the Lord of the Rings data used in examples from GitHub. Note that the files are also included in the `datacarpentry/data/tidy-data` directory, so data download is avoidable.
   * `rmarkdown`, `knitr`, and `xtable` if you want to compile the `Rmd` to `md` and `html`
 
 Possible to do's
