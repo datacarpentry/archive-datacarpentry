@@ -16,7 +16,7 @@ But unfortunately, __untidy__ data abounds. In fact, we often inflict it on ours
 
 We will now import the untidy data that was presented in the three film-specific word count tables from [the intro](01-intro.md).
 
-I assume that data can be found as three plain text, delimited files, one for each `Film`. How to liberate data from spreadsheets or tables in word processing documents has been covered in *these other lessons ... LINK?*. We bring the data into data frames, one per `Film`, and do a little inspection. *Note: Data Carpentry stores data in the top level `data` directory; the object `data_dir` holds the path to that directory. You may have these files in your current working directory, which affects the commands below.*
+I assume that data can be found as three plain text, delimited files, one for each `Film`. How to liberate data from spreadsheets or tables in word processing documents has been covered in *[TODO] this other lesson ... LINK*. We bring the data into data frames, one per `Film`, and do a little inspection. *Note: Data Carpentry stores data in the top level `data` directory; the object `data_dir` holds the path to that directory. You may have these files in your current working directory, which affects the commands below.*
 
 
 ```r
