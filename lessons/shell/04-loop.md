@@ -264,7 +264,7 @@ mv unicorn.dat original-unicorn.dat
 > isn't foolproof, but it's a handy way to see what's going to happen when
 > you're still learning how loops work.
 
-#### Nelle's Pipeline: Processing Files
+#### Nelle's Pipeline: Processing Files 
 
 Nelle is now ready to process her data files.
 Since she's still learning how to use the shell,
@@ -330,7 +330,7 @@ $ for datafile in *[AB].txt; do echo $datafile stats-$datafile; done
 {:class="in"}
 
 Using the left arrow key,
-Nelle backs up and changes the command `echo` to `goostats`:
+Nelle backs up and changes the command `echo` to `goostats` ('bash' will be explained in next lesson):
 
 ~~~
 $ for datafile in *[AB].txt; do bash goostats $datafile stats-$datafile; done
@@ -347,7 +347,7 @@ uses up-arrow to repeat the command,
 and edits it to read:
 
 ~~~
-$ for datafile in *[AB].txt; do echo $datafile; bash goostats $datafile stats-$datafile; done
+$ for datafile in *[AB].txt; do echo $datafile; bash goostats $datafile stats-$datafile; done 
 ~~~
 {:class="in"}
 

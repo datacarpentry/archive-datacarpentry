@@ -13,11 +13,12 @@ But unfortunately, __untidy__ data abounds. In fact, we often inflict it on ours
 
 We will now import the untidy data that was presented in the three film-specific word count tables from [the intro](00-intro.md).
 
-I assume that data can be found as three plain text, delimited files, one for each `Film`. How to liberate data from spreadsheets or tables in word processing documents has been covered in *these other lessons ... LINK?*. We bring the data into data frames, one per `Film`, and do a little inspection.
+I assume that data can be found as three plain text, delimited files, one for each `Film`. How to liberate data from spreadsheets or tables in word processing documents has been covered in *[TODO] these other lessons ... LINK?*. We bring the data into data frames, one per `Film`, and do a little inspection.
 
+We assume that the data files are in a subdirectory called `data`. If this is not the case, change each instance of `data` in the following commands to the correct location of the files. *[TODO] might want to revisit this now that we've moved data to top-level data dir*
 
 ```r
-fship <- read.csv(file.path("data", "The_Fellowship_Of_The_Ring.csv"))
+fship <- read.csv(file.path("data", "The_Fellowship_Of_The_Ring.csv")) 
 ttow <- read.csv(file.path("data", "The_Two_Towers.csv"))
 rking <- read.csv(file.path("data", "The_Return_Of_The_King.csv"))  
 rking
@@ -127,20 +128,21 @@ To explain our call to `gather()` above: we gathered the *values* in variables `
 
 Now we write this multi-film, tidy dataset to file for use in various downstream scripts for further analysis and visualization. This would make an excellent file to share on the web with others, providing a tool-agnostic, ready-to-analyze entry point for anyone wishing to play with this data.
 
+*[TODO] Need to update now that we've moved all data to a top-level data directory* 
 
 ```r
 write.table(lotr_tidy, file = file.path("data", "lotr_tidy.csv"),
             quote = FALSE, sep = ",", row.names = FALSE)
 ```
 
-You can inspect this delimited file here: [data/lotr_tidy.csv](data/lotr_tidy.csv).
+You can inspect this delimited file here: [data/tidy_data/lotr_tidy.csv](data/lotr_tidy.csv).
 
 ## Exercises
 
 The word count data is given in these two __untidy__ and gender-specific files:
 
-  * [data/Female.csv](data/Female.csv)
-  * [data/Male.csv](data/Male.csv)
+  * [data/tidy_data/Female.csv](https://github.com/datacarpentry/datacarpentry/blob/master/data/tidy_data/Female.csv)
+  * [data/tidy_data/Male.csv](https://github.com/datacarpentry/datacarpentry/blob/master/data/tidy_data/Male.csv)
   
 Write an R script that reads them in and writes a single tidy data frame to file. Literally, reproduce the `lotr_tidy` data frame and the `data/lotr_tidy.csv` data file from above.
 

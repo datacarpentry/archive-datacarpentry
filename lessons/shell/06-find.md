@@ -132,8 +132,7 @@ Software is like that.
 {:class="out"}
 
 `grep` has lots of other options.
-To find out what they are, we can type `man grep`.
-`man` is the Unix "manual" command:
+To find informations about them, we can use 'man' again`.
 it prints a description of a command and its options,
 and (if you're lucky) provides a few examples of how to use it:
 
