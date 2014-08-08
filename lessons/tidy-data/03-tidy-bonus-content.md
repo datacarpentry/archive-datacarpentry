@@ -1,18 +1,20 @@
-# 02-tidy-bonus-content.Rmd
+# 03-tidy-bonus-content.Rmd
 Jenny Bryan  
 `r format(Sys.time(), '%d %B, %Y')`  
+
+
 
 This material is not part of the lesson. But it may be helpful when tidying data in real life.
 
 ## More about `rbind()`ing data frames
 
-In [the main tidy lesson](01-tidy.md), the first step was to stack up `Film`-specific data frames row-wise. First I redo that, then present alternative methods for `rbind()`ing data frames.
+In [the main tidy lesson](02-tidy.md), the first step was to stack up `Film`-specific data frames row-wise. First I redo that, then present alternative methods for `rbind()`ing data frames.
 
 
 ```r
-fship <- read.csv(file.path("data", "The_Fellowship_Of_The_Ring.csv"))
-ttow <- read.csv(file.path("data", "The_Two_Towers.csv"))
-rking <- read.csv(file.path("data", "The_Return_Of_The_King.csv"))  
+fship <- read.csv(file.path(data_dir, "The_Fellowship_Of_The_Ring.csv"))
+ttow <- read.csv(file.path(data_dir, "The_Two_Towers.csv"))
+rking <- read.csv(file.path(data_dir, "The_Return_Of_The_King.csv"))  
 lotr_untidy <- rbind(fship, ttow, rking)
 ```
 
@@ -82,7 +84,7 @@ To prepare, we collect the `Film`-specific data frames into a single list.
 
 
 ```r
-lotr_files <- file.path("data", c("The_Fellowship_Of_The_Ring.csv",
+lotr_files <- file.path(data_dir, c("The_Fellowship_Of_The_Ring.csv",
                                   "The_Two_Towers.csv",
                                   "The_Return_Of_The_King.csv"))
 lotr_list <- lapply(lotr_files, read.csv)
@@ -185,7 +187,7 @@ Other options for row binding data frames (and more) include the [`rbindlist()` 
 
 ## More about gathering variables
 
-In [the main tidy lesson](01-tidy.md), the second step was to gather the word counts stored as separate variables for `Females` and `Males` and stack them up to make two new variables: `Words` and `Gender`.
+In [the main tidy lesson](02-tidy.md), the second step was to gather the word counts stored as separate variables for `Females` and `Males` and stack them up to make two new variables: `Words` and `Gender`.
 
 We start with the untidy data frame that results from any of the row-binding methods above.
 
