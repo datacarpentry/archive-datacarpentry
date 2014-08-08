@@ -67,7 +67,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <p>But unfortunately, <strong>untidy</strong> data abounds. In fact, we often inflict it on ourselves, because untidy formats are more attractive for data entry or examination. So how do you make <strong>untidy</strong> data <strong>tidy</strong>?</p>
 <div id="import-untidy-lord-of-the-rings-data" class="section level2">
 <h2>Import untidy Lord of the Rings data</h2>
-<p>We will now import the untidy data that was presented in the three film-specific word count tables from <a href="00-intro.md">the intro</a>.</p>
+<p>We will now import the untidy data that was presented in the three film-specific word count tables from <a href="01-intro.md">the intro</a>.</p>
 <p>I assume that data can be found as three plain text, delimited files, one for each <code>Film</code>. How to liberate data from spreadsheets or tables in word processing documents has been covered in <em>these other lessons … LINK?</em>. We bring the data into data frames, one per <code>Film</code>, and do a little inspection. <em>Note: Data Carpentry stores data in the top level <code>data</code> directory; the object <code>data_dir</code> holds the path to that directory. You may have these files in your current working directory, which affects the commands below.</em></p>
 <pre class="r"><code>fship &lt;- read.csv(file.path(data_dir, &quot;The_Fellowship_Of_The_Ring.csv&quot;))
 ttow &lt;- read.csv(file.path(data_dir, &quot;The_Two_Towers.csv&quot;))
@@ -175,7 +175,7 @@ lotr_tidy</code></pre>
 </ul>
 <div id="where-to-next" class="section level3">
 <h3>Where to next?</h3>
-<p>In the <a href="02-tidy-bonus-content.md">optional bonus content</a>, I show how to tidy this data using only base R functions. At the other extreme, I also show how to tidy with add-on packages that are capable of more advanced data manipulations.</p>
+<p>In the <a href="03-tidy-bonus-content.md">optional bonus content</a>, I show how to tidy this data using only base R functions. At the other extreme, I also show how to tidy with add-on packages that are capable of more advanced data manipulations.</p>
 </div>
 <div id="resources" class="section level3">
 <h3>Resources</h3>

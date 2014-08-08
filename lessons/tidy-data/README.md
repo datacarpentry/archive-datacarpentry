@@ -3,7 +3,7 @@ This is a lesson on tidying data. Specifically, what to do when a conceptual var
 Data used: words spoken by characters of different races and gender in the Lord of the Rings movie trilogy
 
   * [01-intro](01-intro.md) shows untidy and tidy data. Then we demonstrate how tidy data is more useful for analysis and visualization. Includes references, resources, and exercises.
-  * [02-tidy](02-tidy.md) show __how__ to tidy data, using `gather()` from the `tidyr` package. Includes references, resources, and exercises.
+  * [02-tidy](02-tidy.md) shows __how__ to tidy data, using `gather()` from the `tidyr` package. Includes references, resources, and exercises.
   * [03-tidy-bonus-content](03-tidy-bonus-content.md) is not part of the lesson but may be useful as learners try to apply the principles of tidy data in more general settings. Includes links to packages used.
 
 Learner-facing dependencies:
