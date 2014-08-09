@@ -1,4 +1,4 @@
-# 00-intro.Rmd
+# 01-intro.Rmd
 Jenny Bryan  
 `r format(Sys.time(), '%d %B, %Y')`  
 
@@ -22,7 +22,7 @@ I will give you a concrete example of some untidy data I created from [this data
 <tr>
 <td>
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Tue Aug  5 13:24:16 2014 -->
+<!-- Fri Aug  8 13:07:50 2014 -->
 <TABLE border=1>
 <CAPTION ALIGN="top"> The Fellowship Of The Ring </CAPTION>
 <TR> <TH> Race </TH> <TH> Female </TH> <TH> Male </TH>  </TR>
@@ -33,7 +33,7 @@ I will give you a concrete example of some untidy data I created from [this data
 </td>
 <td>
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Tue Aug  5 13:24:16 2014 -->
+<!-- Fri Aug  8 13:07:50 2014 -->
 <TABLE border=1>
 <CAPTION ALIGN="top"> The Two Towers </CAPTION>
 <TR> <TH> Race </TH> <TH> Female </TH> <TH> Male </TH>  </TR>
@@ -44,7 +44,7 @@ I will give you a concrete example of some untidy data I created from [this data
 </td>
 <td>
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Tue Aug  5 13:24:16 2014 -->
+<!-- Fri Aug  8 13:07:50 2014 -->
 <TABLE border=1>
 <CAPTION ALIGN="top"> The Return Of The King </CAPTION>
 <TR> <TH> Race </TH> <TH> Female </TH> <TH> Male </TH>  </TR>
@@ -76,7 +76,7 @@ How well does your approach scale if there were many more movies or if I provide
 Here's how the same data looks in tidy form:
 
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Tue Aug  5 13:24:16 2014 -->
+<!-- Fri Aug  8 13:07:50 2014 -->
 <TABLE border=1>
 <TR> <TH> Film </TH> <TH> Race </TH> <TH> Gender </TH> <TH> Words </TH>  </TR>
   <TR> <TD> The Fellowship Of The Ring </TD> <TD> Elf </TD> <TD> Female </TD> <TD align="right"> 1229 </TD> </TR>
@@ -157,7 +157,7 @@ p + geom_bar(stat = "identity", position = "dodge") +
   coord_flip() + guides(fill = guide_legend(reverse=TRUE))
 ```
 
-![plot of chunk barchart-lotr-words-by-film-race](./00-intro_files/figure-html/barchart-lotr-words-by-film-race.png) 
+![plot of chunk barchart-lotr-words-by-film-race](./01-intro_files/figure-html/barchart-lotr-words-by-film-race.png) 
 
 `Hobbits` are featured heavily in The Fellowhip of the Ring, where as `Men` had a lot more screen time in The Two Towers. They were equally prominent in the last movie, The Return of the King.
 
@@ -173,7 +173,7 @@ If you're skeptical about any of the above claims, it would be interesting to ge
 
 ### Where to next?
 
-In [the next lesson](01-tidy.md), we'll show how to tidy this data.
+In [the next lesson](02-tidy.md), we'll show how to tidy this data.
 
 Our summing over `Gender` to get word counts for `Film * Race` was an example of __data aggregation__. The base function `aggregate()` does simple aggregation. For more flexibility, check out the packages `plyr` and `dplyr`. *point to other lessons when/if they exist?*
 

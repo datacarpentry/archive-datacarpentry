@@ -1,6 +1,9 @@
-# 01-tidy.Rmd
+# 02-tidy.Rmd
 Jenny Bryan  
 `r format(Sys.time(), '%d %B, %Y')`  
+
+
+
 
 Recall that an important aspect of "writing data for computers" is to make your data __tidy__ (see White et al and Wickham in the Resources). There's an emerging consensus on key features of __tidy__ data:
 
@@ -11,16 +14,17 @@ But unfortunately, __untidy__ data abounds. In fact, we often inflict it on ours
 
 ## Import untidy Lord of the Rings data
 
-We will now import the untidy data that was presented in the three film-specific word count tables from [the intro](00-intro.md).
+We will now import the untidy data that was presented in the three film-specific word count tables from [the intro](01-intro.md).
 
-I assume that data can be found as three plain text, delimited files, one for each `Film`. How to liberate data from spreadsheets or tables in word processing documents has been covered in *[TODO] these other lessons ... LINK?*. We bring the data into data frames, one per `Film`, and do a little inspection.
+I assume that data can be found as three plain text, delimited files, one for each `Film`. How to liberate data from spreadsheets or tables in word processing documents has been covered in *[TODO] this other lesson ... LINK*. We bring the data into data frames, one per `Film`, and do a little inspection. *Note: Data Carpentry stores data in the top level `data` directory; the object `data_dir` holds the path to that directory. You may have these files in your current working directory, which affects the commands below.*
 
-We assume that the data files are in a subdirectory called `data`. If this is not the case, change each instance of `data` in the following commands to the correct location of the files. *[TODO] might want to revisit this now that we've moved data to top-level data dir*
 
 ```r
-fship <- read.csv(file.path("data", "The_Fellowship_Of_The_Ring.csv")) 
-ttow <- read.csv(file.path("data", "The_Two_Towers.csv"))
-rking <- read.csv(file.path("data", "The_Return_Of_The_King.csv"))  
+fship <- read.csv(file.path(data_dir, "The_Fellowship_Of_The_Ring.csv"))
+ttow <- read.csv(file.path(data_dir, "The_Two_Towers.csv"))
+rking <- read.csv(file.path(data_dir, "The_Return_Of_The_King.csv")) 
+## if the csv files are in current working directory, import like so:
+## fship <- read.csv("The_Fellowship_Of_The_Ring.csv")
 rking
 ```
 
@@ -128,23 +132,22 @@ To explain our call to `gather()` above: we gathered the *values* in variables `
 
 Now we write this multi-film, tidy dataset to file for use in various downstream scripts for further analysis and visualization. This would make an excellent file to share on the web with others, providing a tool-agnostic, ready-to-analyze entry point for anyone wishing to play with this data.
 
-*[TODO] Need to update now that we've moved all data to a top-level data directory* 
 
 ```r
-write.table(lotr_tidy, file = file.path("data", "lotr_tidy.csv"),
+write.table(lotr_tidy, file = file.path(data_dir, "lotr_tidy.csv"),
             quote = FALSE, sep = ",", row.names = FALSE)
 ```
 
-You can inspect this delimited file here: [data/tidy_data/lotr_tidy.csv](data/lotr_tidy.csv).
+You can inspect this delimited file here: [lotr_tidy.csv](../../data/tidy-data/lotr_tidy.csv).
 
 ## Exercises
 
 The word count data is given in these two __untidy__ and gender-specific files:
 
-  * [data/tidy_data/Female.csv](https://github.com/datacarpentry/datacarpentry/blob/master/data/tidy_data/Female.csv)
-  * [data/tidy_data/Male.csv](https://github.com/datacarpentry/datacarpentry/blob/master/data/tidy_data/Male.csv)
+  * [Female.csv](../../data/tidy-data/Female.csv)
+  * [Male.csv](../../data/tidy-data/Male.csv)
   
-Write an R script that reads them in and writes a single tidy data frame to file. Literally, reproduce the `lotr_tidy` data frame and the `data/lotr_tidy.csv` data file from above.
+Write an R script that reads them in and writes a single tidy data frame to file. Literally, reproduce the `lotr_tidy` data frame and the `lotr_tidy.csv` data file from above.
 
 Write R code to compute the total number of words spoken by each `Race` across the entire trilogy. Do it two ways:
 
@@ -170,7 +173,7 @@ Watch out for how __untidy__ data seduces you into working with it more than you
 
 ### Where to next?
 
-In the [optional bonus content](02-tidy-bonus-content.md), I show how to tidy this data using only base R functions. At the other extreme, I also show how to tidy with add-on packages that are capable of more advanced data manipulations.
+In the [optional bonus content](03-tidy-bonus-content.md), I show how to tidy this data using only base R functions. At the other extreme, I also show how to tidy with add-on packages that are capable of more advanced data manipulations.
 
 ### Resources
 
@@ -180,4 +183,3 @@ In the [optional bonus content](02-tidy-bonus-content.md), I show how to tidy th
   * Tidy data by Hadley Wickham. Preprint available <http://vita.had.co.nz/papers/tidy-data.pdf>.
     - [`tidyr`](https://github.com/hadley/tidyr), an R package to tidy data.
     - R packages by the same author that do heavier lifting in the data reshaping and aggregation department include [`reshape2`](https://github.com/hadley/reshape), [`plyr`](https://github.com/hadley/plyr) and [`dplyr`](https://github.com/hadley/dplyr).
-    

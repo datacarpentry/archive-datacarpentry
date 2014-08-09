@@ -1,5 +1,5 @@
 ---
-title: "00-intro.Rmd"
+title: "01-intro.Rmd"
 author: "Jenny Bryan"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
@@ -26,12 +26,16 @@ library(dplyr)
 library(tidyr)
 library(xtable)
 
-if(!file.exists(file.path("data", "lotr_clean.tsv"))) {
+## stores path to data directory into object data_dir
+source("00-set-data-dir.R")
+
+if(!file.exists(file.path(data_dir, "lotr_clean.tsv"))) {
   download.file(paste0("https://raw.githubusercontent.com/jennybc/",
                        "lotr/master/lotr_clean.tsv"), 
-                destfile = file.path("data", "lotr_clean.tsv"), method = "curl")
+                destfile = file.path(data_dir, "lotr_clean.tsv"),
+                method = "curl")
 }
-lotr_dat <- tbl_df(read.delim(file.path("data", "lotr_clean.tsv"),
+lotr_dat <- tbl_df(read.delim(file.path(data_dir, "lotr_clean.tsv"),
                               stringsAsFactor = FALSE))
 females <- c("Galadriel", "Arwen", "Lobelia Sackville-Baggins", "Rosie",
              "Mrs. Bracegirdle", "Eowyn", "Freda", "Rohan Maiden")
@@ -114,7 +118,7 @@ How well does your approach scale if there were many more movies or if I provide
 Here's how the same data looks in tidy form:
 
 ```{r echo = FALSE, results = 'asis'}
-print(xtable(lotr_tidy, digits = 0),include.rownames = FALSE, type='html')
+print(xtable(lotr_tidy, digits = 0), include.rownames = FALSE, type='html')
 ```
 
 Notice that tidy data is generally taller and narrower. It doesn't fit nicely on the page. Certain elements get repeated alot, e.g. `Hobbit`. For these reasons, we often instinctively resist __tidy__ data as inefficient or ugly. But, unless and until you're making the final product for a textual presentation of data, ignore your yearning to see the data in a compact form.
@@ -167,7 +171,7 @@ If you're skeptical about any of the above claims, it would be interesting to ge
 
 ### Where to next?
 
-In [the next lesson](01-tidy.md), we'll show how to tidy this data.
+In [the next lesson](02-tidy.md), we'll show how to tidy this data.
 
 Our summing over `Gender` to get word counts for `Film * Race` was an example of __data aggregation__. The base function `aggregate()` does simple aggregation. For more flexibility, check out the packages `plyr` and `dplyr`. *point to other lessons when/if they exist?*
 
@@ -188,7 +192,7 @@ The figure was made with `ggplot2`, a popular package that implements the Gramma
 for(film in c("The Fellowship Of The Ring", "The Two Towers",
               "The Return Of The King")) {
   tmp <- data.frame(Film = film, make_untidy_table(film))
-  fname <- file.path("data", paste0(gsub(" ", "_", film), ".csv"))
+  fname <- file.path(data_dir, paste0(gsub(" ", "_", film), ".csv"))
   write.table(tmp, fname, quote = FALSE, sep = ",", row.names = FALSE)
   }
 
@@ -201,7 +205,7 @@ for(gender in c("Female", "Male")) {
                          Elf = Words[Race == "Elf"],
                          Hobbit = Words[Race == "Hobbit"],
                          Man = Words[Race == "Man"]))
-  fname <- file.path("data", paste0(gender, ".csv"))
+  fname <- file.path(data_dir, paste0(gender, ".csv"))
   write.table(tmp, fname, quote = FALSE, sep = ",", row.names = FALSE)
   }
 ```
