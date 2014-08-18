@@ -16,6 +16,7 @@ Based on the very detailed material at [http://software-carpentry.org/v5/novice/
 ##Commands and hints
 
 ### Navigating, creating and moving things
+
 Printing working directory:
 	
 	$ pwd
