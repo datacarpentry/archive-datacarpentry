@@ -1,12 +1,12 @@
-##Useful links (essentially what I used to help make this chart) 
+This is a comparison of R and pandas (python) for common data manipulation tasks 
 
-[Climate Ecology R and Pandas comparison](http://climateecology.wordpress.com/2014/02/10/a-side-by-side-example-of-r-and-python/)  
+##Useful links
+These are the resources used to make this document 
 
-[Pandas reference material](http://pandas.pydata.org/pandas-docs/stable/comparison_with_r.html)  
-
-[Yhat, the makers of Python ggplot, have an R and Pandas comparison](http://blog.yhathq.com/posts/R-and-pandas-and-what-ive-learned-about-each.html) 
-
-[As does Wes McKinney](http://pandas.pydata.org/pandas-docs/stable/comparison_with_r.html), the author of Pandas.
+* [Climate Ecology R and Pandas comparison](http://climateecology.wordpress.com/2014/02/10/a-side-by-side-example-of-r-and-python/)  
+* [Pandas reference material](http://pandas.pydata.org/pandas-docs/stable/comparison_with_r.html)  
+* [Yhat, the makers of Python ggplot, have an R and Pandas comparison](http://blog.yhathq.com/posts/R-and-pandas-and-what-ive-learned-about-each.html) 
+* [As does Wes McKinney](http://pandas.pydata.org/pandas-docs/stable/comparison_with_r.html), the author of Pandas.
 
 ##Contents
 [Data Structures](#data-structures) 
