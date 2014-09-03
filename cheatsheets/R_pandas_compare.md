@@ -212,7 +212,7 @@ subset(dat, wgt <= 100)
 
 ```
 spec <- c('elephant', 'giraffe','ostrich')
-sub_dat <- [dat$species %in% species, ]
+sub_dat <- [dat$species %in% spec, ]
 ```
 
 
