@@ -312,8 +312,7 @@ pd.melt(dat, id_vars = ['a', 'b'])
    
 **Python**
 
-+ Native: hist, plot, boxplot
-+ Other popular packages: Matplotlib, ggplot2
++ Popular packages: Matplotlib, seaborn, Bokeh, ggplot2
 
 ##Contributors
 
