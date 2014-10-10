@@ -18,7 +18,7 @@ HOWEVER, there are circumstances where you might want to use a spreadsheet progr
 
 In this lesson, we will assume that you are most likely using Excel as your primary spreadsheet program- there are others (gnumeric, Calc from OpenOffice), and their functionality is similar, but Excel seems to be the program most used by biologists and ecologists.
 
-![by @tim_yates](/images/1_helpful_clippy.jpg)
+![by @tim_yates](images/1_helpful_clippy.jpg)
 
 In this lesson, we’re going to talk about:
 
