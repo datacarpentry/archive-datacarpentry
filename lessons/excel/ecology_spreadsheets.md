@@ -18,7 +18,7 @@ HOWEVER, there are circumstances where you might want to use a spreadsheet progr
 
 In this lesson, we will assume that you are most likely using Excel as your primary spreadsheet program- there are others (gnumeric, Calc from OpenOffice), and their functionality is similar, but Excel seems to be the program most used by biologists and ecologists.
 
-![by @tim_yates](https://raw.githubusercontent.com/cbahlai/datacarpentry/master/lessons/excel/images/1_helpful_clippy.jpg)
+![by @tim_yates](/images/1_helpful_clippy.jpg)
 
 In this lesson, we’re going to talk about:
 
@@ -46,14 +46,14 @@ Let's try this with an example using some of our sample data: [a list of species
 
 The output should look like this:
 
-![Tables in Excel - example 1](img/excel_tables_example.png)
+![Tables in Excel - example 1](images/excel_tables_example.png)
 
-![Tables in Excel- example 2](img/excel_tables_example1.png)
+![Tables in Excel- example 2](images/excel_tables_example1.png)
 
 
 A common grad student error I’ve seen is students that create multiple data tables within one spreadsheet. NEVER DO THIS. When you create multiple tables within one spreadsheet, you’re drawing false associations between things for the computer, which sees each row as an observation. You’re also potentially using the same field name in multiple places, which will make it harder to clean your data up into a usable form.
 
-![Classis spreadsheet mistake](https://raw.githubusercontent.com/cbahlai/datacarpentry/master/lessons/excel/images/2_datasheet_example.jpg)
+![Classic spreadsheet mistake](images/2_datasheet_example.jpg)
 
 [create an example of this in Excel]
 
@@ -81,7 +81,7 @@ Many statistical programs will not recognize that numeric values of null are ind
 
 From White et al, 2013, Nine simple ways to make it easier to (re)use your data. Ideas in Ecology and Evolution:
 
-![White et al.](https://raw.githubusercontent.com/cbahlai/datacarpentry/master/lessons/excel/images/3_white_table_1.jpg)
+![White et al.](images/3_white_table_1.jpg)
 ## Using formatting to convey information ##
  Example: highlighting cells, rows or columns that should be excluded from an analysis, leaving blank rows to indicate separations in data
 	solution: create a new field to encode which data should be excluded
@@ -94,7 +94,7 @@ If you’re not careful, formatting a worksheet to be more aesthetically pleasin
 
 [create an example of this in Excel]
 
-![by @naupakaz](https://raw.githubusercontent.com/cbahlai/datacarpentry/master/lessons/excel/images/4_merged_cells.jpg)
+![by @naupakaz](images/4_merged_cells.jpg)
 
 
 ## Placing comments or units in cells ##
@@ -117,7 +117,7 @@ Choose descriptive field names, but be careful not to include: spaces, numbers, 
 ## Dates as data ##
 Spreadsheet programs have numerous “useful features” which allow them to “handle” dates in a variety of ways.
 
-![Many formats, many ambiguities](https://raw.githubusercontent.com/cbahlai/datacarpentry/master/lessons/excel/images/5_excel_dates_1.jpg)
+![Many formats, many ambiguities](images/5_excel_dates_1.jpg)
 
 But these ‘features’ often allow ambiguity to creep into your data. Ideally, data should be as unambiguous as possible. The first thing you need to know is that Excel stores dates as a number- see the last column in the above figure. Essentially, it counts the days from a default of December 31, 1899, and thus stores July 2, 2014 as  the serial number 41822.
 
@@ -137,7 +137,7 @@ Which brings us to the many ‘wonderful’ customizations Excel provides in how
 
 Once, I received a dataset from a colleague representing insect counts that were taken every few days over the summer, and things went something like this:
 
-![So, so ambiguous, it's even confusing Excel](https://raw.githubusercontent.com/cbahlai/datacarpentry/master/lessons/excel/images/6_excel_dates_2.jpg)
+![So, so ambiguous, it's even confusing Excel](images/6_excel_dates_2.jpg)
 
 
 If Excel was to be believed, my colleague had been collecting bugs IN THE FUTURE. Now, I have no doubt this person is highly capable, but I believe time travel was beyond even his grasp.
@@ -150,12 +150,10 @@ The types of statistical models I build usually incorporate year as a factor, to
 
 So, can you convert all your dates into DOY format? Well, in excel, here’s a handy dandy guide:
 
-![Kill that ambiguity before it bites you!](https://raw.githubusercontent.com/cbahlai/datacarpentry/master/lessons/excel/images/7_excel_dates_3.jpg)
-
+![Kill that ambiguity before it bites you!](images/7_excel_dates_3.jpg)
 
 
 [Exercise: pulling month out of Excel dates]
-
 
 
 # Basic quality control and data manipulation in spreadsheets #
