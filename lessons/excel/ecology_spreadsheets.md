@@ -42,7 +42,7 @@ You must make it clear to the computer how the data cells relate to the relevant
 So, you can see how these two points apply directly to how you set up your spreadsheets. 
 
 The rule of thumb, when setting up a datasheet, is columns= fields, rows = observations, cells=data (values).
-Let's try this with an example using some of our sample data: [a list of species](../data/biology/species.csv) and [a list of plots](../data/biology/plots.csv). You can do that by simply opening the `*.csv` files in Excel. Excel will automatically try to fit the data from the `*.csv` file and put the first value in column A and the second value in column B. 
+Let's try this with an example using some of our sample data: [a list of species](../../data/biology/species.csv) and [a list of plots](../../data/biology/plots.csv). You can do that by simply opening the `*.csv` files in Excel. Excel will automatically try to fit the data from the `*.csv` file and put the first value in column A and the second value in column B. 
 
 The output should look like this:
 
