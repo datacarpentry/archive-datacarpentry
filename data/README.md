@@ -4,7 +4,7 @@ This directory contains the datasets used as examples for the lessons in the dat
 
 ##biology
 
-Example data from the biological sciences. 
+Example data from the biological sciences.
 
 ### aphid data
 
@@ -16,7 +16,7 @@ Example data from the biological sciences.
 
 **Files**
 
-* Master_suction_trap_data_list_uncleaned.csv : a pre-cleaning version of the dataset 
+* Master_suction_trap_data_list_uncleaned.csv : a pre-cleaning version of the dataset
 * aphid_data_Bahlai_2014.xlsx : spreadsheet with aphid data
 
 ### Portal mammals data
@@ -37,12 +37,26 @@ This is data on a small mammal community in southern Arizona over the last 35 ye
 * surveys-exercise-extract_month.csv : a small  subset of the surveys data used in one of the excel lessons
 * portal_mammals.sqlite : a SQLite database of the mammal data; incorporates plots.csv, species.csv and surveys.csv
 
+### NEON temperature time series
+
+This is data collected from NEON towers at 2 sites over 3 days.  It is stored in an HDF5 file that was created as part of a workshop held at ESA 2014.
+
+**Downloaded from:** [https://github.com/NEONdps/neonESA2014/tree/master/HDF]()
+*This links to original files downloaded via the [NEON data portal](http://data.neoninc.org)*
+
+**Used in:** HDF5 lessons - lessons/R/materials/09-hdf5-R
+
+**Files**
+* fiuTestFile.hdf5 : An HDF5 file containing 3 days of temperature data collected at 5 different tower levels at 2 different NEON sites
+
+
+
 ## text_mining
-Data used in lessons aimed at text-mining in the social sciences. 
+Data used in lessons aimed at text-mining in the social sciences.
 
 ### plos
 
-Full-text of several articles from PLOS ONE, PLOS Computational Biology, and PLOS Biology. 
+Full-text of several articles from PLOS ONE, PLOS Computational Biology, and PLOS Biology.
 
 **Downloaded from:** http://www.plosone.org/
 
@@ -57,7 +71,7 @@ Full-text of several articles from PLOS ONE, PLOS Computational Biology, and PLO
 * plos_5.txt: [DOI:10.1371/journal.pone.0102437](http://dx.doi.org/10.1371/journal.pone.0102437)
 * plos_6.txt: [DOI:10.1371/journal.pone.0017342](http://dx.doi.org/10.1371/journal.pone.0017342)
 * plos_7.txt: [DOI:10.1371/journal.pone.0092931](http://dx.doi.org/10.1371/journal.pone.0092931)
-* plos_8.txt: [DOI:10.1371/journal.pone.0091497](http://dx.doi.org/10.1371/journal.pone.0091497) 
+* plos_8.txt: [DOI:10.1371/journal.pone.0091497](http://dx.doi.org/10.1371/journal.pone.0091497)
 * plos_9.txt: [DOI:10.1371/annotation/28ac6052-4f87-4b88-a817-0cd5743e83d6](http://dx/doi.org/10.1371/annotation/28ac6052-4f87-4b88-a817-0cd5743e83d6)
 * plos_10.txt: [DOI:10.1371/journal.pcbi.1003594](http://dx.doi.org/10.1371/journal.pcbi.1003594)
 * plos_11.txt: [DOI:10.1371/journal.pbio.002007](http://dx.doi.org/10.1371/journal.pbio.002007)
@@ -70,7 +84,7 @@ Full-text of several articles from PLOS ONE, PLOS Computational Biology, and PLO
 * plos_18.txt: [DOI:10.1371/journal.pbio.1001896](http://dx.doi.org/10.1371/journal.pbio.1001896)
 * plos_19.txt: [DOI:10.1371/journal.pone.0099750](http://dx.doi.org/10.1371/journal.pone.0099750)
 * plos_20.txt: [DOI:10.1371/annotation/48e29578-a073-42e7-bca4-2f96a5998374](http://dx.doi.org/10.1371/annotation/48e29578-a073-42e7-bca4-2f96a5998374)
- 
+
 ## tidy-data
 Sample data for data cleaning exercises. Includes the words spoken by characters of different races and gender in the Lord of the Rings movie trilogy.
 
@@ -89,4 +103,3 @@ Sample data for data cleaning exercises. Includes the words spoken by characters
 * The_Two_Towers.csv: word counts in TT
 * lotr_clean.tsv: original data in tidy form
 * lotr_tidy.tsv: the multi-film, tidy dataset generated at the end of the lessons
-  
