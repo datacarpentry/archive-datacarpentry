@@ -183,7 +183,7 @@ The figure was made with `ggplot2`, a popular package that implements the Gramma
     - Chapter 3: Data Intended for Human Consumption, Not Machine Consumption by Paul Murrell.
   * Nine simple ways to make it easier to (re)use your data by EP White, E Baldridge, ZT Brym, KJ Locey, DJ McGlinn, SR Supp. *Ideas in Ecology and Evolution* 6(2): 1–10, 2013. doi:10.4033/iee.2013.6b.6.f <http://library.queensu.ca/ojs/index.php/IEE/article/view/4608>
     - See the section "Use standard table formats"
-  * Tidy data by Hadley Wickham. Preprint available <http://vita.had.co.nz/papers/tidy-data.pdf>.
+  * Tidy data by Hadley Wickham. Journal of Statistical Software. Vol. 59, Issue 10, Sep 2014. <http://www.jstatsoft.org/v59/i10>
     - [`tidyr`](https://github.com/hadley/tidyr), an R package to tidy data.
     - R packages by the same author that do heavier lifting in the data reshaping and aggregation department include [`reshape2`](https://github.com/hadley/reshape), [`plyr`](https://github.com/hadley/plyr) and [`dplyr`](https://github.com/hadley/dplyr).
     
