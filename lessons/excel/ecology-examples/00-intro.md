@@ -4,7 +4,7 @@ Authors:**Christie Bahlai**, **Aleksandra Pawlik**<br>
 Contributors: **Jennifer Bryan**, **Alexander Duryee**, **Jeffrey Hollister**, **Daisie Huang**, **Owen Jones**, and
 **Ben Marwick**
 
-Spreadsheet programs are use very useful graphical interfaces for designing data tables and handling very basic data quality control functions. 
+Spreadsheet programs are very useful graphical interfaces for designing data tables and handling very basic data quality control functions. 
 
 The cardinal rules of using spreadsheet programs for data:
 
@@ -22,7 +22,7 @@ HOWEVER, there are circumstances where you might want to use a spreadsheet progr
 
 In this lesson, we will assume that you are most likely using Excel as your primary spreadsheet program- there are others (gnumeric, Calc from OpenOffice), and their functionality is similar, but Excel seems to be the program most used by biologists and ecologists.
 
-![Helpful clippy - img by @tim_yates](../../../img/helpful_clippy.jpg)
+![Helpful clippy - img by @tim_yates](./images/1_helpful_clippy.jpg)
 
 In this lesson, we’re going to talk about:
 
