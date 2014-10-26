@@ -6,7 +6,7 @@ Materials by: **Jeffrey Hollister**, **Alexander Duryee**, **Jennifer Bryan**, *
 
 In the [previous lesson](05-exporting-data.md) we discussed how to export Excel file formats into `*.csv`. Whilst Comma Separated Value files are indeed very useful allowing for easily exchanging and sharing data. 
 
-However, there are some significant problems with this particular format. Quite often the data values themselves may include commas ('). In that case, the software which you use (including Excel) will most likely incorrectly display the data in columns. It is because the commas which are a part of the data values will be interpreted as a delimiter.
+However, there are some significant problems with this particular format. Quite often the data values themselves may include commas (,). In that case, the software which you use (including Excel) will most likely incorrectly display the data in columns. It is because the commas which are a part of the data values will be interpreted as a delimiter.
 
 For example, our data could look like this:
 	
@@ -20,7 +20,7 @@ If we try to read the above into Excel (or other spreadsheet programme), we will
 
 ![Issue with importing csv format](../../../img/csv-mistake.png)
 
-The value for *taxa* was split into two columns (instead of being put in one column `D`). This can propagate to a number of further errors. For example, the "extra" column will be interpreted as a column with many missing values (and without a proper header!). In addition to that, the value in column `D` for the record in row 3 (so the one where the value for 'taxa' contained the comma) is now incorrect. 
+The value for 'taxa' was split into two columns (instead of being put in one column `D`). This can propagate to a number of further errors. For example, the "extra" column will be interpreted as a column with many missing values (and without a proper header!). In addition to that, the value in column `D` for the record in row 3 (so the one where the value for 'taxa' contained the comma) is now incorrect. 
  
 
 ### Dealing with commas as part of data values in `*.csv` files
