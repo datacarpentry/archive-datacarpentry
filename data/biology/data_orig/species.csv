@@ -1,4 +1,4 @@
-"species_id","genus","species","taxa"
+species_id,genus,species,taxa
 "AB","Amphispiza","bilineata","Bird"
 "AH","Ammospermophilus","harrisi","Rodent-not censused"
 "AS","Ammodramus","savannarum","Bird"
@@ -16,7 +16,7 @@
 "DX","Dipodomys","sp.","Rodent"
 "EO","Eumeces","obsoletus","Reptile"
 "GS","Gambelia","silus","Reptile"
-"NL","Neotoma","albigula","Rodent"
+"NA","Neotoma","albigula","Rodent"
 "NX","Neotoma","sp.","Rodent"
 "OL","Onychomys","leucogaster","Rodent"
 "OT","Onychomys","torridus","Rodent"
