@@ -6,7 +6,6 @@
 
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="Content-Style-Type" content="text/css" />
 <meta name="generator" content="pandoc" />
 
 <meta name="author" content="Jenny Bryan" />
@@ -55,7 +54,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <div id="header">
 <h1 class="title">03-tidy-bonus-content.Rmd</h1>
 <h4 class="author"><em>Jenny Bryan</em></h4>
-<h4 class="date"><em>08 August, 2014</em></h4>
+<h4 class="date"><em>04 November, 2014</em></h4>
 </div>
 
 
@@ -86,7 +85,7 @@ lotr_untidy_2 &lt;- rbind_list(fship, ttow, rking)</code></pre>
 ##  $ Female: int  1229 14 0 331 0 401 183 2 268
 ##  $ Male  : int  971 3644 1995 513 2463 3589 510 2673 2459</code></pre>
 <pre class="r"><code>str(lotr_untidy_2)</code></pre>
-<pre><code>## 'data.frame':    9 obs. of  4 variables:
+<pre><code>## Classes 'tbl_df', 'tbl' and 'data.frame':    9 obs. of  4 variables:
 ##  $ Film  : chr  &quot;The Fellowship Of The Ring&quot; &quot;The Fellowship Of The Ring&quot; &quot;The Fellowship Of The Ring&quot; &quot;The Two Towers&quot; ...
 ##  $ Race  : Factor w/ 3 levels &quot;Elf&quot;,&quot;Hobbit&quot;,..: 1 2 3 1 2 3 1 2 3
 ##  $ Female: int  1229 14 0 331 0 401 183 2 268
@@ -154,7 +153,7 @@ str(lotr_untidy_4)</code></pre>
 <pre class="r"><code>lotr_untidy_5 &lt;- rbind_all(lotr_list)</code></pre>
 <pre><code>## Warning: Unequal factor levels: coercing to character</code></pre>
 <pre class="r"><code>str(lotr_untidy_5)</code></pre>
-<pre><code>## 'data.frame':    9 obs. of  4 variables:
+<pre><code>## Classes 'tbl_df', 'tbl' and 'data.frame':    9 obs. of  4 variables:
 ##  $ Film  : chr  &quot;The Fellowship Of The Ring&quot; &quot;The Fellowship Of The Ring&quot; &quot;The Fellowship Of The Ring&quot; &quot;The Two Towers&quot; ...
 ##  $ Race  : Factor w/ 3 levels &quot;Elf&quot;,&quot;Hobbit&quot;,..: 1 2 3 1 2 3 1 2 3
 ##  $ Female: int  1229 14 0 331 0 401 183 2 268
@@ -247,9 +246,8 @@ lotr_tidy_2</code></pre>
 <div id="tidyrgather" class="section level4">
 <h4><code>tidyr::gather()</code></h4>
 <p>This is repeated content from the main lesson.</p>
-<pre class="r"><code>library(tidyr)</code></pre>
-<pre><code>## Warning: package 'tidyr' was built under R version 3.1.1</code></pre>
-<pre class="r"><code>lotr_tidy_3 &lt;-
+<pre class="r"><code>library(tidyr)
+lotr_tidy_3 &lt;-
   gather(lotr_untidy, key = 'Gender', value = 'Words', Female, Male)
 lotr_tidy_3</code></pre>
 <pre><code>##                          Film   Race Gender Words
@@ -323,12 +321,12 @@ $(document).ready(function () {
 
 </script>
 
-<!-- dynamically load mathjax for compatibility with --self-contained -->
+<!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

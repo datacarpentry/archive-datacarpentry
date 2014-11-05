@@ -21,37 +21,37 @@ I will give you a concrete example of some untidy data I created from [this data
 <table border = 1>
 <tr>
 <td>
-<!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Fri Aug  8 13:07:50 2014 -->
-<TABLE border=1>
-<CAPTION ALIGN="top"> The Fellowship Of The Ring </CAPTION>
-<TR> <TH> Race </TH> <TH> Female </TH> <TH> Male </TH>  </TR>
-  <TR> <TD> Elf </TD> <TD align="right"> 1229 </TD> <TD align="right"> 971 </TD> </TR>
-  <TR> <TD> Hobbit </TD> <TD align="right"> 14 </TD> <TD align="right"> 3644 </TD> </TR>
-  <TR> <TD> Man </TD> <TD align="right"> 0 </TD> <TD align="right"> 1995 </TD> </TR>
-   </TABLE>
+<!-- html table generated in R 3.1.1 by xtable 1.7-4 package -->
+<!-- Tue Nov  4 16:14:42 2014 -->
+<table border=1>
+<caption align="top"> The Fellowship Of The Ring </caption>
+<tr> <th> Race </th> <th> Female </th> <th> Male </th>  </tr>
+  <tr> <td> Elf </td> <td align="right"> 1229 </td> <td align="right"> 971 </td> </tr>
+  <tr> <td> Hobbit </td> <td align="right"> 14 </td> <td align="right"> 3644 </td> </tr>
+  <tr> <td> Man </td> <td align="right"> 0 </td> <td align="right"> 1995 </td> </tr>
+   </table>
 </td>
 <td>
-<!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Fri Aug  8 13:07:50 2014 -->
-<TABLE border=1>
-<CAPTION ALIGN="top"> The Two Towers </CAPTION>
-<TR> <TH> Race </TH> <TH> Female </TH> <TH> Male </TH>  </TR>
-  <TR> <TD> Elf </TD> <TD align="right"> 331 </TD> <TD align="right"> 513 </TD> </TR>
-  <TR> <TD> Hobbit </TD> <TD align="right"> 0 </TD> <TD align="right"> 2463 </TD> </TR>
-  <TR> <TD> Man </TD> <TD align="right"> 401 </TD> <TD align="right"> 3589 </TD> </TR>
-   </TABLE>
+<!-- html table generated in R 3.1.1 by xtable 1.7-4 package -->
+<!-- Tue Nov  4 16:14:42 2014 -->
+<table border=1>
+<caption align="top"> The Two Towers </caption>
+<tr> <th> Race </th> <th> Female </th> <th> Male </th>  </tr>
+  <tr> <td> Elf </td> <td align="right"> 331 </td> <td align="right"> 513 </td> </tr>
+  <tr> <td> Hobbit </td> <td align="right"> 0 </td> <td align="right"> 2463 </td> </tr>
+  <tr> <td> Man </td> <td align="right"> 401 </td> <td align="right"> 3589 </td> </tr>
+   </table>
 </td>
 <td>
-<!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Fri Aug  8 13:07:50 2014 -->
-<TABLE border=1>
-<CAPTION ALIGN="top"> The Return Of The King </CAPTION>
-<TR> <TH> Race </TH> <TH> Female </TH> <TH> Male </TH>  </TR>
-  <TR> <TD> Elf </TD> <TD align="right"> 183 </TD> <TD align="right"> 510 </TD> </TR>
-  <TR> <TD> Hobbit </TD> <TD align="right"> 2 </TD> <TD align="right"> 2673 </TD> </TR>
-  <TR> <TD> Man </TD> <TD align="right"> 268 </TD> <TD align="right"> 2459 </TD> </TR>
-   </TABLE>
+<!-- html table generated in R 3.1.1 by xtable 1.7-4 package -->
+<!-- Tue Nov  4 16:14:42 2014 -->
+<table border=1>
+<caption align="top"> The Return Of The King </caption>
+<tr> <th> Race </th> <th> Female </th> <th> Male </th>  </tr>
+  <tr> <td> Elf </td> <td align="right"> 183 </td> <td align="right"> 510 </td> </tr>
+  <tr> <td> Hobbit </td> <td align="right"> 2 </td> <td align="right"> 2673 </td> </tr>
+  <tr> <td> Man </td> <td align="right"> 268 </td> <td align="right"> 2459 </td> </tr>
+   </table>
 </td>
 </tr>
 </table>
@@ -75,29 +75,29 @@ How well does your approach scale if there were many more movies or if I provide
 
 Here's how the same data looks in tidy form:
 
-<!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Fri Aug  8 13:07:50 2014 -->
-<TABLE border=1>
-<TR> <TH> Film </TH> <TH> Race </TH> <TH> Gender </TH> <TH> Words </TH>  </TR>
-  <TR> <TD> The Fellowship Of The Ring </TD> <TD> Elf </TD> <TD> Female </TD> <TD align="right"> 1229 </TD> </TR>
-  <TR> <TD> The Fellowship Of The Ring </TD> <TD> Elf </TD> <TD> Male </TD> <TD align="right"> 971 </TD> </TR>
-  <TR> <TD> The Fellowship Of The Ring </TD> <TD> Hobbit </TD> <TD> Female </TD> <TD align="right"> 14 </TD> </TR>
-  <TR> <TD> The Fellowship Of The Ring </TD> <TD> Hobbit </TD> <TD> Male </TD> <TD align="right"> 3644 </TD> </TR>
-  <TR> <TD> The Fellowship Of The Ring </TD> <TD> Man </TD> <TD> Female </TD> <TD align="right"> 0 </TD> </TR>
-  <TR> <TD> The Fellowship Of The Ring </TD> <TD> Man </TD> <TD> Male </TD> <TD align="right"> 1995 </TD> </TR>
-  <TR> <TD> The Two Towers </TD> <TD> Elf </TD> <TD> Female </TD> <TD align="right"> 331 </TD> </TR>
-  <TR> <TD> The Two Towers </TD> <TD> Elf </TD> <TD> Male </TD> <TD align="right"> 513 </TD> </TR>
-  <TR> <TD> The Two Towers </TD> <TD> Hobbit </TD> <TD> Female </TD> <TD align="right"> 0 </TD> </TR>
-  <TR> <TD> The Two Towers </TD> <TD> Hobbit </TD> <TD> Male </TD> <TD align="right"> 2463 </TD> </TR>
-  <TR> <TD> The Two Towers </TD> <TD> Man </TD> <TD> Female </TD> <TD align="right"> 401 </TD> </TR>
-  <TR> <TD> The Two Towers </TD> <TD> Man </TD> <TD> Male </TD> <TD align="right"> 3589 </TD> </TR>
-  <TR> <TD> The Return Of The King </TD> <TD> Elf </TD> <TD> Female </TD> <TD align="right"> 183 </TD> </TR>
-  <TR> <TD> The Return Of The King </TD> <TD> Elf </TD> <TD> Male </TD> <TD align="right"> 510 </TD> </TR>
-  <TR> <TD> The Return Of The King </TD> <TD> Hobbit </TD> <TD> Female </TD> <TD align="right"> 2 </TD> </TR>
-  <TR> <TD> The Return Of The King </TD> <TD> Hobbit </TD> <TD> Male </TD> <TD align="right"> 2673 </TD> </TR>
-  <TR> <TD> The Return Of The King </TD> <TD> Man </TD> <TD> Female </TD> <TD align="right"> 268 </TD> </TR>
-  <TR> <TD> The Return Of The King </TD> <TD> Man </TD> <TD> Male </TD> <TD align="right"> 2459 </TD> </TR>
-   </TABLE>
+<!-- html table generated in R 3.1.1 by xtable 1.7-4 package -->
+<!-- Tue Nov  4 16:14:42 2014 -->
+<table border=1>
+<tr> <th> Film </th> <th> Race </th> <th> Gender </th> <th> Words </th>  </tr>
+  <tr> <td> The Fellowship Of The Ring </td> <td> Elf </td> <td> Female </td> <td align="right"> 1229 </td> </tr>
+  <tr> <td> The Fellowship Of The Ring </td> <td> Elf </td> <td> Male </td> <td align="right"> 971 </td> </tr>
+  <tr> <td> The Fellowship Of The Ring </td> <td> Hobbit </td> <td> Female </td> <td align="right"> 14 </td> </tr>
+  <tr> <td> The Fellowship Of The Ring </td> <td> Hobbit </td> <td> Male </td> <td align="right"> 3644 </td> </tr>
+  <tr> <td> The Fellowship Of The Ring </td> <td> Man </td> <td> Female </td> <td align="right"> 0 </td> </tr>
+  <tr> <td> The Fellowship Of The Ring </td> <td> Man </td> <td> Male </td> <td align="right"> 1995 </td> </tr>
+  <tr> <td> The Two Towers </td> <td> Elf </td> <td> Female </td> <td align="right"> 331 </td> </tr>
+  <tr> <td> The Two Towers </td> <td> Elf </td> <td> Male </td> <td align="right"> 513 </td> </tr>
+  <tr> <td> The Two Towers </td> <td> Hobbit </td> <td> Female </td> <td align="right"> 0 </td> </tr>
+  <tr> <td> The Two Towers </td> <td> Hobbit </td> <td> Male </td> <td align="right"> 2463 </td> </tr>
+  <tr> <td> The Two Towers </td> <td> Man </td> <td> Female </td> <td align="right"> 401 </td> </tr>
+  <tr> <td> The Two Towers </td> <td> Man </td> <td> Male </td> <td align="right"> 3589 </td> </tr>
+  <tr> <td> The Return Of The King </td> <td> Elf </td> <td> Female </td> <td align="right"> 183 </td> </tr>
+  <tr> <td> The Return Of The King </td> <td> Elf </td> <td> Male </td> <td align="right"> 510 </td> </tr>
+  <tr> <td> The Return Of The King </td> <td> Hobbit </td> <td> Female </td> <td align="right"> 2 </td> </tr>
+  <tr> <td> The Return Of The King </td> <td> Hobbit </td> <td> Male </td> <td align="right"> 2673 </td> </tr>
+  <tr> <td> The Return Of The King </td> <td> Man </td> <td> Female </td> <td align="right"> 268 </td> </tr>
+  <tr> <td> The Return Of The King </td> <td> Man </td> <td> Male </td> <td align="right"> 2459 </td> </tr>
+   </table>
 
 Notice that tidy data is generally taller and narrower. It doesn't fit nicely on the page. Certain elements get repeated alot, e.g. `Hobbit`. For these reasons, we often instinctively resist __tidy__ data as inefficient or ugly. But, unless and until you're making the final product for a textual presentation of data, ignore your yearning to see the data in a compact form.
 
@@ -157,7 +157,7 @@ p + geom_bar(stat = "identity", position = "dodge") +
   coord_flip() + guides(fill = guide_legend(reverse=TRUE))
 ```
 
-![plot of chunk barchart-lotr-words-by-film-race](./01-intro_files/figure-html/barchart-lotr-words-by-film-race.png) 
+![](./01-intro_files/figure-html/barchart-lotr-words-by-film-race.png) 
 
 `Hobbits` are featured heavily in The Fellowhip of the Ring, where as `Men` had a lot more screen time in The Two Towers. They were equally prominent in the last movie, The Return of the King.
 
@@ -185,7 +185,7 @@ The figure was made with `ggplot2`, a popular package that implements the Gramma
     - Chapter 3: Data Intended for Human Consumption, Not Machine Consumption by Paul Murrell.
   * Nine simple ways to make it easier to (re)use your data by EP White, E Baldridge, ZT Brym, KJ Locey, DJ McGlinn, SR Supp. *Ideas in Ecology and Evolution* 6(2): 1–10, 2013. doi:10.4033/iee.2013.6b.6.f <http://library.queensu.ca/ojs/index.php/IEE/article/view/4608>
     - See the section "Use standard table formats"
-  * Tidy data by Hadley Wickham. Preprint available <http://vita.had.co.nz/papers/tidy-data.pdf>.
+  * Tidy data by Hadley Wickham. Journal of Statistical Software. Vol. 59, Issue 10, Sep 2014. <http://www.jstatsoft.org/v59/i10>
     - [`tidyr`](https://github.com/hadley/tidyr), an R package to tidy data.
     - R packages by the same author that do heavier lifting in the data reshaping and aggregation department include [`reshape2`](https://github.com/hadley/reshape), [`plyr`](https://github.com/hadley/plyr) and [`dplyr`](https://github.com/hadley/dplyr).
     
