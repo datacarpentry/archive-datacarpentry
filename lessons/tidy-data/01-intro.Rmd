@@ -44,18 +44,22 @@ lotr_dat <-
          Film = factor(Film, levels = c("The Fellowship Of The Ring",
                                         "The Two Towers",
                                         "The Return Of The King")),
-         Gender = factor(ifelse(Character %in% females, "Female", "Male"),
-                         levels = c("Female", "Male")),
+         Gender = factor(ifelse(Character %in% females, "Female", "Male")),
          Race = factor(Race))
 (lotr_tidy <- lotr_dat %>%
    filter(Race %in% c("Elf", "Hobbit", "Man")) %>%
-   droplevels() %>%
+   droplevels %>%
    group_by(Film, Gender, Race) %>%
    summarize(Words = sum(Words)))
 (all_combns <- with(lotr_tidy,
                     expand.grid(Film = levels(Film), Race = levels(Race),
                                 Gender = levels(Gender))))
 lotr_tidy <- left_join(all_combns, lotr_tidy)
+## 2014-11-04 working around a dplyr join bug re factor levels
+lotr_tidy <- lotr_tidy %>%
+  mutate(Film = factor(Film, levels = c("The Fellowship Of The Ring",
+                                        "The Two Towers",
+                                        "The Return Of The King")))
 lotr_tidy[is.na(lotr_tidy)] <- 0
 lotr_tidy
 lotr_tidy <- lotr_tidy %>% arrange(Film, Race, Gender)
