@@ -6,7 +6,6 @@
 
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="Content-Style-Type" content="text/css" />
 <meta name="generator" content="pandoc" />
 
 <meta name="author" content="Jenny Bryan" />
@@ -55,7 +54,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <div id="header">
 <h1 class="title">02-tidy.Rmd</h1>
 <h4 class="author"><em>Jenny Bryan</em></h4>
-<h4 class="date"><em>08 August, 2014</em></h4>
+<h4 class="date"><em>04 November, 2014</em></h4>
 </div>
 
 
@@ -113,9 +112,8 @@ str(lotr_untidy)</code></pre>
 <p>We are still violating one of the fundamental principles of <strong>tidy data</strong>. “Word count” is a fundamental variable in our dataset and it’s currently spread out over two variables, <code>Female</code> and <code>Male</code>. Conceptually, we need to gather up the word counts into a single variable and create a new variable, <code>Gender</code>, to track whether each count refers to females or males. We use a function from the <code>tidyr</code> package to do this.</p>
 <pre class="r"><code>## uncomment and submit this line to install the tidyr package
 ## install.packages(&quot;tidyr&quot;)
-library(tidyr)</code></pre>
-<pre><code>## Warning: package 'tidyr' was built under R version 3.1.1</code></pre>
-<pre class="r"><code>lotr_tidy &lt;-
+library(tidyr)
+lotr_tidy &lt;-
   gather(lotr_untidy, key = 'Gender', value = 'Words', Female, Male)
 lotr_tidy</code></pre>
 <pre><code>##                          Film   Race Gender Words
@@ -185,7 +183,7 @@ lotr_tidy</code></pre>
 <li>Chapter 3: Data Intended for Human Consumption, Not Machine Consumption by Paul Murrell.</li>
 </ul></li>
 <li>Nine simple ways to make it easier to (re)use your data by EP White, E Baldridge, ZT Brym, KJ Locey, DJ McGlinn, SR Supp. <em>Ideas in Ecology and Evolution</em> 6(2): 1–10, 2013. <a href="doi:10.4033/iee.2013.6b.6.f">doi:10.4033/iee.2013.6b.6.f</a> <a href="http://library.queensu.ca/ojs/index.php/IEE/article/view/4608">http://library.queensu.ca/ojs/index.php/IEE/article/view/4608</a></li>
-<li>Tidy data by Hadley Wickham. Preprint available <a href="http://vita.had.co.nz/papers/tidy-data.pdf">http://vita.had.co.nz/papers/tidy-data.pdf</a>.
+<li>Tidy data by Hadley Wickham. Journal of Statistical Software. Vol. 59, Issue 10, Sep 2014. <a href="http://www.jstatsoft.org/v59/i10">http://www.jstatsoft.org/v59/i10</a>
 <ul>
 <li><a href="https://github.com/hadley/tidyr"><code>tidyr</code></a>, an R package to tidy data.</li>
 <li>R packages by the same author that do heavier lifting in the data reshaping and aggregation department include <a href="https://github.com/hadley/reshape"><code>reshape2</code></a>, <a href="https://github.com/hadley/plyr"><code>plyr</code></a> and <a href="https://github.com/hadley/dplyr"><code>dplyr</code></a>.</li>
@@ -206,12 +204,12 @@ $(document).ready(function () {
 
 </script>
 
-<!-- dynamically load mathjax for compatibility with --self-contained -->
+<!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

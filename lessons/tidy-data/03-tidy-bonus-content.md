@@ -57,7 +57,7 @@ str(lotr_untidy_2)
 ```
 
 ```
-## 'data.frame':	9 obs. of  4 variables:
+## Classes 'tbl_df', 'tbl' and 'data.frame':	9 obs. of  4 variables:
 ##  $ Film  : chr  "The Fellowship Of The Ring" "The Fellowship Of The Ring" "The Fellowship Of The Ring" "The Two Towers" ...
 ##  $ Race  : Factor w/ 3 levels "Elf","Hobbit",..: 1 2 3 1 2 3 1 2 3
 ##  $ Female: int  1229 14 0 331 0 401 183 2 268
@@ -170,7 +170,7 @@ str(lotr_untidy_5)
 ```
 
 ```
-## 'data.frame':	9 obs. of  4 variables:
+## Classes 'tbl_df', 'tbl' and 'data.frame':	9 obs. of  4 variables:
 ##  $ Film  : chr  "The Fellowship Of The Ring" "The Fellowship Of The Ring" "The Fellowship Of The Ring" "The Two Towers" ...
 ##  $ Race  : Factor w/ 3 levels "Elf","Hobbit",..: 1 2 3 1 2 3 1 2 3
 ##  $ Female: int  1229 14 0 331 0 401 183 2 268
@@ -292,13 +292,6 @@ This is repeated content from the main lesson.
 
 ```r
 library(tidyr)
-```
-
-```
-## Warning: package 'tidyr' was built under R version 3.1.1
-```
-
-```r
 lotr_tidy_3 <-
   gather(lotr_untidy, key = 'Gender', value = 'Words', Female, Male)
 lotr_tidy_3
