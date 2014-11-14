@@ -239,7 +239,7 @@ mv unicorn.dat original-unicorn.dat
 
 > #### Measure Twice, Run Once
 > 
-> A loop is a way to do many things at once&mdash;or to make many mistakes at
+> A loop is a way to do many things at once&mdash; or to make many mistakes at
 > once if it does the wrong thing. One way to check what a loop *would* do
 > is to echo the commands it would run instead of actually running them.
 > For example, we could write our file renaming loop like this:
