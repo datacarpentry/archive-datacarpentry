@@ -27,7 +27,7 @@ use for statistics and plotting.
 A `data.frame` is a collection of vectors of identical lengths. Each vector
 represents a column, and each vector can be of a different data type (e.g.,
 characters, integers, factors). The `str()` function is useful to inspect the
-data types of the columns.
+data types of the columns. Note that a `data.frame` is also a type of list, and is thus compatible with functions that work with lists
 
 `data.frame` can be created by the functions `read.csv()` or `read.table()`, in
 other words, when importing spreadsheets from your hard drive (or the web).
