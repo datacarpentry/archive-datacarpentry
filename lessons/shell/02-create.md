@@ -5,9 +5,9 @@ title: Creating Things
 ---
 <div class="objectives" markdown="1">
 
-#### Objectives
-*   Create a directory hierarchy that matches a given diagram.
-*   Create files in that hierarchy using an editor or by copying and renaming existing files.
+#### Objectives    
+*   Create a directory hierarchy that matches a given diagram.   
+*   Create files in that hierarchy using an editor or by copying and renaming existing files.   
 *   Display the contents of a directory using the command line.
 *   Delete specified files and/or directories.
 
@@ -38,7 +38,7 @@ solar.pdf    swc/
 ~~~
 {:class="out"}
 
-Let's create a new directory called `thesis` using the command `mkdir thesis`
+Let us create a new directory called `thesis` using the command `mkdir thesis`
 (which has no output):
 
 ~~~

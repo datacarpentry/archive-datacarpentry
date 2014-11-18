@@ -16,7 +16,6 @@ knitr::opts_chunk$set(results='hide', fig.path='img/r-lesson-')
 > * Introduce R syntax
 > * Point to relevant information on how to get help, and understand how to ask well formulated questions
 
-
 # Demonstration of what we will learn to do
 
 # Before we get started

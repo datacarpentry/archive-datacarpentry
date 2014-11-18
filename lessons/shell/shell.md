@@ -7,7 +7,7 @@ Assume that students have a set of three data files (plots.csv, surveys.csv and 
 ##Objectives
 
 * Understand the advantages of text files over other file types
-* Introduce concept of command-line interface
+* Introduce the concept of command-line interface
 * Explain how to navigate your computer's directory structures and understand paths
 * Bash commands: using flags, finding documentation
 * Move, copy and delete files

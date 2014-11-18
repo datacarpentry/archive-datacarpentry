@@ -24,7 +24,7 @@ To do all that, we'll have to learn a little bit about programming.
 
 ### Objectives
 * Explain what a library is, and what libraries are used for.
-* Load an Pyhon/pandas library and use the things it contains.
+* Load a Python/pandas library and use the things it contains.
 * Read tabular data from a file into a program.
 * Assign values to variables.
 * Learn about data types
@@ -292,7 +292,7 @@ DataFrame provides all possibilities of R's `data.frame` and  much more. It coul
 * `.columns` - names of columns
 * `.head()` - displays 5 first rows
 * `.tail()` - displays 5 last rows
-* `.shape` - gives shape of  data in tuple (columns, rows)
+* `.shape` - gives shape of  data in tuple (rows, columns)
 
 ### Indexing
 If we want to get a single value from the **DataFrame** object we must provide an index to it in square brackets and use iloc function.
