@@ -38,7 +38,7 @@ Change directories:
 	$ cd  <em>directory</em>		# change to that directory
 </pre>
 
-*directory* can be *absolute*, meaning it starts with a `/`. If it does not start with a `/`, the movement is relative to the current directory. The special directory name `..` means 'one level up'. In Unix (i.e. Linux and Mac OSX) there are no drive letters!
+If *directory* start with a '/'; it is an *absolute* path, meaning the location is specified starting at the top of the entire file system (*note: in Linux and Mac OS X there are no drive letters like in Windows!*). If *directory* does not start with a '/' the location is relative to the current directory. The special directory name `..` means 'one level up'. 
 
 	$ cd ..         		# change 'one level up'
 	$ cd            		# change to your home directory
