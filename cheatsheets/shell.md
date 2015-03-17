@@ -28,7 +28,8 @@ Printing working directory:
 	
 List contents of a directory:
 	
-	$ ls
+	$ ls				# show all files
+	$ ls -l				# show details
 	$ ls *.txt     			# subset of files matching pattern *.txt
 	
 Change directories:
@@ -50,7 +51,7 @@ Copy, move, delete:
 	$ cp  *origin* *destination*
 	$ mv  *origin* *destination*
 	$ rm  *file*
-        $ rm -r *directory*		# deletes complete directory tree
+	$ rm -r *directory*		# deletes complete directory tree
 	
 *Hint: tab completion makes you more efficient and less error-prone*
 
@@ -62,17 +63,17 @@ Create and/or edit a file:
 
 Seeing the contents of a file:
 
-	$ cat *filename*
-	$ less *filename*  		# use 'q' to leave the viewer
+	$ cat *file*
+	$ less *filen*  		# use 'q' to leave the viewer
 	
 How big is this file?
 	
-	$ ls -lh *filename*
-	$ wc     *filename*  		# count of lines, words and characters
+	$ ls -lh *file(s)*
+	$ wc     *file(s)*  		# count of lines, words and characters
 
 Sorting the contents of a file:
 	
-	$ sort number_lines.csv
+	$ sort *file*
 
 Redirecting output to a file: use the '>' operator, e.g.:
 
@@ -87,7 +88,7 @@ Getting subset of rows:
 	$ head  *file*        		# first 10 lines of a file
 	$ tail  *file*        		# last 10 lines of a file
 	
-Getting subset of columns (in this case, 3rd column of a file called inputfile.csv):
+Getting a subset of columns (in this case, 3rd column of a file called inputfile.csv):
 	
 	$ cut -f 3 -d , inputfile.csv
 	
@@ -95,8 +96,8 @@ Getting subset of columns (in this case, 3rd column of a file called inputfile.c
 
 In files and in directories:
 
-	$ find				# for details see the man page
-	$ grep *regexp* *files*
+	$ grep *regexp* *files*		# search pattern in files
+	$ find. -name 'pattern'	        # search file matching pattern in current dir and below
 		
 ## What did I do? 
 
