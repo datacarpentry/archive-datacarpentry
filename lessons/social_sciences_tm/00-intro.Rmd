@@ -1,16 +1,14 @@
 ---
 layout: lesson
-root: ../..
 title: Introducing text analysis of survey data
 ---
 
-<div class="objectives" markdown="1">
+> ### Objectives
+>
+> *   Explain when a quantitative approach is useful when analysing text
+> *   Explain how text can be used as quantitative data
 
-#### Objectives
-*   Explain when a quantitative approach is useful when analysing text
-*   Explain how text can be used as quantitative data
-
-</div>
+This lesson introduces text analysis using R. The lesson uses the `tm` package, which is currently the most versatile and widely used package for analysing text in R. The lesson focuses on survey responses in a CSV file, but it could easily be adapted to work with text in PDF files, MS Word documents, plain text files, web pages, twitter streams, and so on. 
 
 A convenient way to collect information from people is to ask them to type responses to a set of questions. This is especially useful when it's tricky to anticipate the range of responses that is to be collected and when it's not practical or desirable to offer checkboxes or dropdown menus. Collection of free text allows respondents to be unconstrained by the data collection instrument (although the size limit of the text field is a practical constraint). 
 
@@ -32,13 +30,11 @@ The most important data structure that results from this conversion is the docum
 
 These lessons are designed to be worked through interactively at the R console. At several points we'll be iterating over functions, experimenting with different parameter values. This is a typical process for exploratory data analysis, working interactively and trying several different methods before we get something meaningful.  
 
-<div class="keypoints" markdown="1">
+### Key Points
 
-#### Key Points
 *   Free text responses is a valuable survey method, but can be challenging to analyse
 *   A quantitative approach to analysing free text is advantageous because it can be automated, reproduced and audited. 
 *   The document-term matrix is an important data structure for quantitative analysis of free text
 *   An exploratory, iterative approach is valuable when encountering new data for the first time
 
-</div>
 
