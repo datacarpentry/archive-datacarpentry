@@ -1,5 +1,9 @@
 Data Carpentry Core Curriculum
 =============
 
-This repository contains core material for the 2-day data carpentry workshop. Please see our [contribution guidelines](CONTRIBUTING.md) before contributing updates, bug fixes, or other corrections.
+This repository is the historical repository of Data Carpentry lessons. Each lesson is now its own repository, so please see those individual repositories for the most recent versions of the lessons or to do any lesson development. 
+
+DO NOT USE OR DEVELOP IN THIS REPOSITORY
+
+
  
