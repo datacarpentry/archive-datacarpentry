@@ -246,14 +246,14 @@ past. That is, if we put a SQL query into a text file and pipe it to
 sqlite, sqlite will execute the query and print the result, just as it
 would in interactive mode or through the user interface. If we choose
 CSV format (`.mode csv`), sqlite will essentially print the query
-results as CVS-formatted data. There is one quirk, however. By default
+results as CSV-formatted data. There is one quirk, however. By default
 sqlite does not include a header row in CSV format, but having one
 will help tremendously not only with better documenting our data, but
 also with loading the generated data into other programs such as R. We
 can control this by adding `.headers on` before the query.
 
 Now that we know how to script the database import and SQL subsetting,
-we add the other cvs file imports and replace the query in the sqlite
+we add the other csv file imports and replace the query in the sqlite
 script with the one that subsets the data in the way that enables us
 to aggregate them in R by genus rather than species.
 
